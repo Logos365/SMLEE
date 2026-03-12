@@ -1,5 +1,6 @@
 {
   "attachmentFolderPath": "./attachments",
   "alwaysUpdateLinks": true,
-  "trashOption": "local"
+  "trashOption": "local",
+  "showLineNumber": true
 }
