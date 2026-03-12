@@ -8,5 +8,9 @@
   "google-calendar",
   "homepage",
   "tasknotes",
-  "obsidian-icon-folder"
+  "obsidian-icon-folder",
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "obsidian-zotero-desktop-connector",
+  "templater-obsidian"
 ]
