@@ -2,5 +2,6 @@
   "attachmentFolderPath": "./attachments",
   "alwaysUpdateLinks": true,
   "trashOption": "local",
-  "showLineNumber": true
+  "showLineNumber": true,
+  "promptDelete": false
 }
