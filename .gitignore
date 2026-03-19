@@ -2,3 +2,6 @@
 .obsidian/cache/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.smart-env/
+.trash/
+*.pdf
