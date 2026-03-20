@@ -5,3 +5,5 @@
 .smart-env/
 .trash/
 *.pdf
+.trash/
+*.log
