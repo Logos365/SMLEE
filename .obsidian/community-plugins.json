@@ -1,5 +1,4 @@
 [
-  "obsidian-git",
   "calendar",
   "periodic-notes",
   "markdown-table-editor",
@@ -16,5 +15,6 @@
   "obsidian-trash-explorer",
   "obsidian-pandoc",
   "tars",
-  "obsidian-math-plus"
+  "obsidian-math-plus",
+  "obsidian-git"
 ]
