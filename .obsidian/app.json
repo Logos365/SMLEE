@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "trashOption": "local",
   "showLineNumber": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "propertiesInDocument": "visible"
 }
