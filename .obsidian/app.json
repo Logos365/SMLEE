@@ -4,5 +4,6 @@
   "trashOption": "local",
   "showLineNumber": true,
   "promptDelete": false,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "readableLineLength": false
 }
