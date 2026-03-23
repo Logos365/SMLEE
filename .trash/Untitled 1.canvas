@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"1cb99c7a2c2960bb","type":"group","x":-474,"y":-320,"width":954,"height":440,"color":"2","label":"Untitled group"},
+		{"id":"cde7980acac75bc5","type":"file","file":"010_Diary/daily_report_gmail_2026-03-17.md","x":60,"y":-300,"width":400,"height":400},
+		{"id":"1319a1fedc123bb2","type":"file","file":"010_Diary/daily_report_2026-03-17.md","x":-454,"y":-300,"width":354,"height":344},
+		{"id":"092ad33590273c5c","type":"text","text":"글을 추가...","x":66,"y":303,"width":250,"height":60,"color":"1"},
+		{"id":"c8c7da3c1700a7d4","type":"file","file":"Untitled 4.md","x":-316,"y":240,"width":356,"height":455}
+	],
+	"edges":[
+		{"id":"98d6cdae8a0a2eb4","fromNode":"c8c7da3c1700a7d4","fromSide":"top","toNode":"1cb99c7a2c2960bb","toSide":"bottom"},
+		{"id":"845525352b60a006","fromNode":"c8c7da3c1700a7d4","fromSide":"top","toNode":"1cb99c7a2c2960bb","toSide":"bottom","label":"ㄴㄴㄴㄴ"}
+	]
+}
