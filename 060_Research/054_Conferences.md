@@ -38,3 +38,8 @@ https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mdaQOF0AAA
    
 2. 발표 제목을 정해야 합니다.
 3. 짧지만 강한 인상으 주는 제목을 정하고 싶습니다.
+
+
+나의 바이오 그라피를 200자 정도로 작성을 해야 하거든요.
+
+포항공대 석사 (mechanical engineering), 독일 막스플랑크 연구소(MPI for Microstructure physics) 박사과정생/ 포스닥, 독일 Freiburg 대학교 응용물리 박사, 독일 막스플랑크 연구소(MPI for Colloids and Interfaces) 방문교수, 현재 한국기계연구원 책임연구원, 과학기술연합대학원 대학교 전임교수(나노메카트로닉스) 이거든요.. 박막재료, 탄소재료, 이차전지, 복사냉각, 열관리 재료 등을 연구하고 있어요. 영어로 작성해야 해요.
