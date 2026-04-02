@@ -1,0 +1,163 @@
+1. Greatly increased toughness of infiltrated spider silk
+2. Fast synthesis of high-performance graphene films by hydrogen-free rapid thermal chemical vapor deposition
+3. Graphene as flexible electronic materials: mechanical limitation by defect formation and efforts to overcome
+4. Effects of intrinsic hydrophobicity on wettability of polymer replicas of a superhydrophobic lotus leaf
+5. Mass-producible replication of highly hydrophobic surfaces from plant leaves
+6. Nanostructured pure anatase titania tubes replicated from electrospun polymer fiber templates by atomic layer deposition
+7. Rayleigh-instability-induced metal nanoparticle chains encapsulated in nanotubes produced by atomic layer deposition
+8. Accelerated Sulfur Evolution Reactions by TiS2/TiO2@MXene Host for High‐Volumetric‐Energy‐Density Lithium–Sulfur Batteries
+9. Fracture characteristics of monolayer CVD-graphene
+10. 3D photonic crystal intermediate reflector for micromorph thin‐film tandem solar cell
+11. Activated Carbon Textile _via_ Chemistry of Metal Extraction for Supercapacitors
+12. Thickness dependence of the mechanical properties of free-standing graphene oxide papers
+13. Double-layer CVD graphene as stretchable transparent electrodes
+14. Improved mechanical stability of dried collagen membrane after metal infiltration
+15. Facile route toward mechanically stable superhydrophobic copper using oxidation–reduction induced morphology changes
+16. Low-temperature ZnO atomic layer deposition on biotemplates: flexible photocatalytic ZnO structures from eggshell membranes
+17. Fast and controllable reduction of graphene oxide by low-cost CO2 laser for supercapacitor application
+18. Fabrication of hydrophobic films replicated from plant leaves in nature
+19. Laser-induced reduction of graphene oxide by intensity-modulated line beam for supercapacitor applications
+20. An alternative route towards metal–polymer hybrid materials prepared by vapor‐phase processing
+21. Effects of annealing on electrochemical performance in graphene/V2O5 supercapacitor
+22. Laser synthesis of MOF-derived Ni@ Carbon for high-performance pseudocapacitors
+23. Hierarchically surface‐textured ultrastable hybrid film for large‐scale triboelectric nanogenerators
+24. Preparation and elastic properties of helical nanotubes obtained by atomic layer deposition with carbon nanocoils as templates
+25. Conformal transparent conducting oxides on black silicon
+26. Porous carbon textile decorated with VC/V2O3-X hybrid nanoparticles: Dual-functional host for flexible Li-S full batteries
+27. Adsorption/desorption kinetics of nitric oxide on zinc oxide nano film sensor enhanced by light irradiation and gold-nanoparticles
+28. Monatomic chemical-vapor-deposited graphene membranes bridge a half-millimeter-scale gap
+29. Healing defective CVD-graphene through vapor phase treatment
+30. Hierarchical Three-Dimensional ZnO and Their Shape-Preserving Transformation into Hollow ZnAl2O4 Nanostructures
+31. Graphitic Carbon with MnO/Mn7C3 Prepared by Laser‐Scribing of MOF for Versatile Supercapacitor Electrodes
+32. Metal infiltration into biomaterials by ALD and CVD: a comparative study
+33. Synthesis of CVD‐graphene on rapidly heated copper foils
+34. A robust and conductive metal-impregnated graphene oxide membrane selectively separating organic vapors
+35. Stacked bilayer graphene and redox-active interlayer for transparent and flexible high-performance supercapacitors
+36. Drastically increased electrical and thermal conductivities of Pt-infiltrated MXenes
+37. In Situ Raman Spectroscopic Study of Al-Infiltrated Spider Dragline Silk under Tensile Deformation
+38. Simultaneous etching and doping by Cu-stabilizing agent for high-performance graphene-based transparent electrodes
+39. Calligraphic ink enabling washable conductive textile electrodes for supercapacitors
+40. Synthesis and optical properties of ZnO and carbon nanotube based coaxial heterostructures
+41. Replications and analysis of microlens array fabricated by a modified LIGA process
+42. ZnTe-coated ZnO nanorods: Hydrogen sulfide nano-sensor purely controlled by pn junction
+43. Prolonged biodegradation and improved mechanical stability of collagen via vapor-phase Ti stitching for long-term tissue regenerat
+44. Structure-based color of natural petals discriminated by polymer replication
+45. Carbon Textile Decorated with Pseudocapacitive VC/VxOy for High-Performance Flexible Supercapacitors
+46. Shape-transformable long-lasting superhydrophilic carbon cloth for sustainable solar vapor generation
+47. Collapse-free thermal bonding technique for large area microchambers in plastic lab-on-a-chip applications
+48. Multifunctional Fe3O4 nanoparticles-embedded poly (styrene)/poly (thiophene) core/shell composite particles
+49. Highly uniform growth of monolayer graphene by chemical vapor deposition on Cu–Ag alloy catalysts
+50. Intercalation‐Conversion Hybrid Cathode Enabled by MXene‐Driven TiO2/TiS2 Heterostructure for High‐Energy‐Density Li–S Battery
+51. Atomic layer deposition effect on the electrical properties of Al2O3-passivated PbS quantum dot field-effect transistors
+52. One-step etching, doping, and adhesion-control process for graphene electrodes
+53. Determination of heterojunction band offsets between CdS bulk and PbS quantum dots using photoelectron spectroscopy
+54. Graphene-based crack lithography for high-throughput fabrication of terahertz metamaterials
+55. A novel low temperature bonding technique for plastic substrates using X-ray irradiation
+56. Laser-induced sulfurization of nickel-based metal-organic frameworks for highly stable phase-engineered energy materials
+57. Boosted Zn 2+ storage performance of hydrated vanadium oxide by defect and heterostructure
+58. Enhanced mechanical stability and biodegradability of Ti-infiltrated polylactide
+59. UV nano embossing for polymer nano structures with non-transparent mold insert
+60. Laser reduction of Zn-infiltrated multilayered graphene oxide as electrode materials for supercapacitors
+61. Strategies of boosting synergistic adsorption-catalysis effect for high-performance lithium–sulfur batteries
+62. Ni/Co/Co 3 O 4@ C nanorods derived from a MOF@ MOF hybrid for efficient overall water splitting
+63. Single-layer metamaterial bolometer for sensitive detection of low-power terahertz waves at room temperature
+64. Mechanical properties and contact damages of nanostructured silicon carbide ceramics
+65. Metal–Organic Framework-Derived NiO@C as a Host for MnO2 Cathode of Stable Zinc-Ion Batteries
+66. Photocatalytic exoskeleton: Chitin nanofiber for retrievable and sustainable TiO2 carriers for the decomposition of various pollut
+67. Turning cotton into tough energy textile via metal oxide assisted carbonization
+68. Synthesis of polystyrene/polythiophene core/shell nanoparticles by dual initiation
+69. Materialization of strained CVD-graphene using thermal mismatch
+70. Single phase ZnO submicrotubes as a replica of electrospun polymer fiber template by atomic layer deposition
+71. Audio processing
+72. Always-on photocatalytic antibacterial facemask with mini UV-LED array
+73. Gold nanoparticles deposited on a conical anodic aluminum oxide substrate for improved surface-enhanced Raman scattering
+74. Laser‐induced graphitic carbon with ultrasmall nickel nanoparticles for efficient overall water splitting
+75. Tough and immunosuppressive titanium-infiltrated exoskeleton matrices for long-term endoskeleton repair
+76. Enhanced carrier collection efficiency in hierarchical nano-electrode for a high-performance photoelectrochemical cell
+77. Dry Synthesis of Sulfur‐Terminated MXene as Multifunctional Catalyst for Stable Lithium–Sulfur Batteries
+78. Metal‐Organic Frameworks as a Thermal Emitter for High‐Performance Passive Radiative Cooling
+79. Carrier Transport Behaviors Depending on the Two Orthogonally Directional Energy Bands in the ZnO Nanofilm Affected by Oxygen Plas
+80. Taming Lithium Nucleation and Growth on Cu Current Collector by Electrochemical Activation of ZnF2 Layer
+81. Hydrogen and solid carbon production via methane pyrolysis in a rotating gliding arc plasma reactor
+82. Metal–Organic Framework‐Templated Graphitic Carbon Confining MnO/Mn3O4 Nanoparticles via Direct Laser Printing for Electrocatalysi
+83. Laser-scribed ultrasmall nanoparticles with unary and binary phases
+84. Paved phonon transport route in graphene by vapor phase process
+85. Mechanics-driven patterning of CVD graphene for roll-based manufacturing process
+86. Heterostructured Sn:SnO2 Nanodots for High‐Performance Li–S Batteries with Kinetics‐Enhanced Cathode and Dendrite‐Free Anode
+87. Hierarchically structured ZnO/petal hybrid composites with tuned optoelectronic and mechanical properties
+88. Effect of catalyst concentration and reaction time on one-step synthesized hypercrosslinked polyxylene
+89. One-step synthesis of photoluminescent core/shell polystyrene/polythiophene particles
+90. Effects of β-sheet crystals and a glycine-rich matrix on the thermal conductivity of spider dragline silk
+91. Modification of heat storage ability and adhesive properties of core/shell structured phase change material nanocapsules
+92. Transmission electron microscopy specimen preparation for layer-area graphene by a direct transfer method
+93. Method of preparing hydrophobic polymer substrate and hydrophobic polymer substrate prepared by same
+94. Enhanced thermoelectric performance of defect engineered monolayer graphene
+95. High-pressure oxygen annealing of Al2O3 passivation layer for performance enhancement of graphene field-effect transistors
+96. Tuning the thermal conductivity of the amorphous PAA polymer via vapor-phase infiltration
+97. Transformation of solid waste into nanoporous carbon via carbothermic reduction
+98. Dark-field TEM imaging technique to visualize the local structure of two-dimensional material: graphene
+99. Enhanced crystallization of bisphenol-A polycarbonate by organoclay in the presence of sulfonated polystyrene ionomers
+100. Atomic layer deposition on biological matter
+101. Ultrathin Yet Effective: 90 nm ZnF2 Layer for Stabilizing Zinc–Metal Anodes
+102. In situ and operando thermal characterization in aqueous electric double layer capacitors using the 3ω hot-wire method
+103. Leaf-derived porous carbon synthesized by carbothermic reduction
+104. Abnormal elastic modulus behavior in a crystalline–amorphous core–shell nanowire system
+105. Synthesis and properties of phase change material-polypyrrole core-shell nanocapsules _via_ Fe3+-oxidative miniemulsion polymeriza
+106. Rapid synthesis of nanomaterials by solvent-free laser irradiation for energy storage and conversion
+107. Sub-5 nm nanostructures fabricated by atomic layer deposition using a carbon nanotube template
+108. Electric transport in 3D photonic crystal intermediate reflectors for micromorph thin-film tandem solar cells
+109. Electric transport in 3D photonic crystal intermediate reflectors for micromorph thin-film tandem solar cells
+110. Three-dimensional photonic crystals as intermediate filter for thin-film tandem solar cells
+111. Method of producing mold used in production of hydrophobic polymer substrate
+112. Maya blue‐inspired hybrid coating for robust and superhydrophilic solar evaporators using commercial black acrylic paint
+113. Metal-Organic Framework-Templated Graphitic Carbon Confining MnO/Mn3O4 Nanoparticles via Direct Laser Printing for Electrocatalysi
+114. Method of manufacturing graphene film and graphene film manufactured thereby
+115. Method for detecting crystal grain boundaries of grapheme and device using method
+116. Morphological and spectroscopic analyses of poly (alkyl methacrylate)/poly (thiophene) composite nanoparticles prepared by dual in
+117. Ultralight Pt-ALD-modified graphene aerogel achieving aluminum-class thermal resistance at 12% mass
+118. Low-temperature ZnO atomic layer deposition on biotemplates: Flexible photocatalytic ZnO structures from eggshell membranes
+119. Recent Advances in Non‐Carbon Dense Sulfur Cathodes for Lithium–Sulfur Battery with High Energy Density
+120. Materials today energy
+121. Fabrication of VOx/Graphene Composite Using CO2 Laser Reduction and Atomic Layer Deposition and Its Electrochemical Performance
+122. Hybrid Materials: An Alternative Route Towards Metal–Polymer Hybrid Materials Prepared by Vapor‐Phase Processing (Adv. Funct. Mate
+123. 3D-printed multiphasic biocomposite architectures for load-bearing medical implants
+124. Heterostructured Sn: SnO2 Nanodots for Stable Lithium-Sulfur Batteries with Kinetics-Enhanced Cathode and Dendrite-Free Anode
+125. Taming Lithium Nucleation and Growth on Copper Current Collector by Electrochemical Activation of ZnF2 Layer
+126. Recent Advances in Non-Carbon Dense Sulfur Cathodes for Lithium–Sulfur Battery with High Energy Density
+127. Graphene preparation apparatus using Joule heating and preparation method therefor
+128. Accelerated Sulfur Evolution Reactions by TiS2/TiO2@MXene Host for High‐Volumetric‐Energy‐Density Lithium–Sulfur Batteries (Adv. F
+129. Laser-scribed ultrasmall nanoparticles with unary and binary phases
+130. Laser‐Induced Graphitic Carbon with Ultrasmall Nickel Nanoparticles for Efficient Overall Water Splitting (Part. Part. Syst. Chara
+131. Laser-scribed ultrasmall nanoparticles with unary and binary phases
+132. Vapor Phase Infiltration for Biological Matter
+133. Laser Thermal reduction of Graphene Oxide Paper for the Fabrication of Supercapacitors
+134. Greatly improved toughness of chitin nanofibrous GBR membrane by alternative metalation
+135. Greatly improved toughness of chitin nanofibrous GBR membrane by metalation
+136. Dark-field ransmission Electron Microscopy Imaging Technique to Visualize the Local Structure of Two-dimensional Material; Graphen
+137. 단일 원자층 박막의 파괴거동
+138. 뜬 마이크로 디바이스 (suspended microdevice) 를 이용한 드랙라인 거미줄의 (spider dragline silk) 열전도율 측정
+139. Robust and Conductive Metal Infiltrated Graphene Oxide Membranes for Selective Polar-Vapor Permeation
+140. Spatial Mapping of Grating Structured Heterogeneous ZnO with Geometrical Light Trapping Effect
+141. Hierarchically Structured ZnO/Petal Hybrid Composites with Tuned Optoelectronic using Atomic Layer Deposition
+142. Al2O3 deposited PbS Quantum Dot films23
+143. Morphology and Structure Anlysis of Graphene by Low Voltage TEM
+144. Hydrazine Doped Graphene and Its Stability
+145. Monitoring the electrical property of graphene transistor by the oxygen vacancy generation of top oxide layer
+146. Characteristic of graphene field effect transistor with ferroelectric gate dielectric
+147. In Situ Raman Spectroscopic Study of Al-Infiltrated Spider Dragline Silk under Tensile Deformation
+148. Hierarchically Structured ZnO/Petal Hybrid Composites with Tuned Optoelectronic and Mechanical Properties
+149. Fracture Characteristics or Monolayer CVD-Graphene
+150. Swift Synthesis of CVD-graphene Utilizing Conduction Heat Transfer
+151. Highly Conductive Double-layer Graphene under Large Deformation
+152. Fabrication of Machanically Stable Superhydrophobic Copper Using Redox Reaction
+153. 3D photonic crystal interlayers for micromorph thin film silicon tandem cell
+154. 3D photonic crystal interlayers for micromorph thin film silicon tandem cell
+155. Super silk reinforced by metal
+156. Intrinsic effects of materials on superhydrophobicity of polymer replicas from nature
+157. 3D-printed multiphasic biocomposite architectures for load-bearing medical implants
+158. Calligraphic ink enabling washable conductive textile electrodes for supercapacitors
+159. Graphitic Carbon with MnO/Mn7C3 Prepared by Laser-Scribing of MOF for Versatile Supercapacitor Electrodes
+160. Fabrication of Hydrophobic Film Using Plant Leaves from Nature
+161. Calligraphic ink enabling washable conductive textile electrodes for supercapacitors
+162. Healing defective CVD-graphene through vapor phase treatment
+163. A robust and conductive metal-impregnated graphene oxide membrane selectively separating organic vapors1
