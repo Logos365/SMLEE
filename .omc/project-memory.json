@@ -176,14 +176,20 @@
   "hotPaths": [
     {
       "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\나의 논문 리스트 1.md",
-      "accessCount": 3,
-      "lastAccessed": 1775111009667,
+      "accessCount": 5,
+      "lastAccessed": 1775116446670,
       "type": "file"
     },
     {
       "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\나의 논문 리스트.md",
       "accessCount": 2,
       "lastAccessed": 1775093215740,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\컨소시움 관련.md",
+      "accessCount": 2,
+      "lastAccessed": 1775116215431,
       "type": "file"
     },
     {
@@ -205,9 +211,45 @@
       "type": "file"
     },
     {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\컨소시움 관련.md",
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지",
       "accessCount": 1,
-      "lastAccessed": 1775110812566,
+      "lastAccessed": 1775116362942,
+      "type": "directory"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_6.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116371731,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_7.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116372163,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_8.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116372617,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_9.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116373308,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_10.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116374173,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_11.txt",
+      "accessCount": 1,
+      "lastAccessed": 1775116377716,
       "type": "file"
     }
   ],
