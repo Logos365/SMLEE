@@ -1,0 +1,191 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775092947490,
+  "projectRoot": "D:\\23_GitHub\\01_Office_PC",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "000_Template": {
+      "path": "000_Template",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1775092946898,
+      "keyFiles": [
+        "20260327_Template.md",
+        "My Diary Template.md",
+        "리뷰_영화_서울의 봄.md"
+      ]
+    },
+    "010_Diary": {
+      "path": "010_Diary",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1775092946900,
+      "keyFiles": [
+        "2026-03-09.md",
+        "2026-03-12.md",
+        "2026-03-23.md",
+        "daily_report_2026-03-17.md",
+        "daily_report_gmail_2026-03-17.md"
+      ]
+    },
+    "020_AI Learning": {
+      "path": "020_AI Learning",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946901,
+      "keyFiles": [
+        "260119-2_obsidian_beginner_guide.pptx"
+      ]
+    },
+    "030_Project": {
+      "path": "030_Project",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775092946902,
+      "keyFiles": []
+    },
+    "040_Areas": {
+      "path": "040_Areas",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946904,
+      "keyFiles": [
+        "Readme.md"
+      ]
+    },
+    "050_Resources": {
+      "path": "050_Resources",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946905,
+      "keyFiles": [
+        "Readme.md"
+      ]
+    },
+    "060_Research": {
+      "path": "060_Research",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946906,
+      "keyFiles": [
+        "054_Conferences.md"
+      ]
+    },
+    "070_Lecture": {
+      "path": "070_Lecture",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946907,
+      "keyFiles": [
+        "Readme.md"
+      ]
+    },
+    "080_Supervision": {
+      "path": "080_Supervision",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775092946909,
+      "keyFiles": []
+    },
+    "090_Archive": {
+      "path": "090_Archive",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1775092946910,
+      "keyFiles": [
+        "00_Readme.md",
+        "Getting started with OneDrive.pdf"
+      ]
+    },
+    "Attached File": {
+      "path": "Attached File",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946911,
+      "keyFiles": [
+        "Pasted image 20260124154039.png"
+      ]
+    },
+    "attachments": {
+      "path": "attachments",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946912,
+      "keyFiles": [
+        "미래소재디스커버리_연구기획_보고서.docx"
+      ]
+    },
+    "TaskNotes": {
+      "path": "TaskNotes",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946914,
+      "keyFiles": [
+        "설정관련 안내 pdf.md"
+      ]
+    },
+    "_types": {
+      "path": "_types",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775092946915,
+      "keyFiles": [
+        "task.md"
+      ]
+    },
+    "TaskNotes\\Views": {
+      "path": "TaskNotes\\Views",
+      "purpose": "View templates",
+      "fileCount": 6,
+      "lastAccessed": 1775092946926,
+      "keyFiles": [
+        "agenda-default.base",
+        "calendar-default.base",
+        "kanban-default.base"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\나의 논문 리스트.md",
+      "accessCount": 2,
+      "lastAccessed": 1775093215740,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\수요조사서 제출.md",
+      "accessCount": 1,
+      "lastAccessed": 1775093147915,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
