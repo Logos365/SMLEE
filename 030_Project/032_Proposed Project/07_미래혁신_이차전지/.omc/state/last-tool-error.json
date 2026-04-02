@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"D:\\\\23_GitHub\\\\01_Office_PC\\\\030_Project\\\\032_Proposed Project\\\\07_미래혁신_이차전지\\\" && python -c \\\"\\nimport fitz\\nimport sys\\ndoc = fitz.open('붙임1.+2026년도+미래혁신선도형이차전지원천기술개발+사업+신규과제+사전공고문 (...",
+  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n    import sys; data=sys.stdin.buffer.read(); print(data.decode('utf-8','replace')[:6000])\r\n                                              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nUnicodeEncodeError: 'cp949' codec can't encode character '\\ufffd' in position 288: illegal multibyte sequence",
+  "timestamp": "2026-04-02T06:30:36.084Z",
+  "retry_count": 1
+}

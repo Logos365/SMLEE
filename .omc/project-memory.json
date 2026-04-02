@@ -175,6 +175,12 @@
   },
   "hotPaths": [
     {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\나의 논문 리스트 1.md",
+      "accessCount": 3,
+      "lastAccessed": 1775111009667,
+      "type": "file"
+    },
+    {
       "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\나의 논문 리스트.md",
       "accessCount": 2,
       "lastAccessed": 1775093215740,
@@ -196,6 +202,12 @@
       "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\make_docx.py",
       "accessCount": 1,
       "lastAccessed": 1775095411061,
+      "type": "file"
+    },
+    {
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\컨소시움 관련.md",
+      "accessCount": 1,
+      "lastAccessed": 1775110812566,
       "type": "file"
     }
   ],
