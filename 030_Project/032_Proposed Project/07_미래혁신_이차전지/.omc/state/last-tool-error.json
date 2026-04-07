@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"python -c \\\"\\nimport re\\nwith open('D:/23_GitHub/01_Office_PC/030_Project/032_Proposed Project/07_미래혁신_이차전지/나의 논문 리스트 1.md', 'r', encoding='utf-8') as f:\\n    content = f.read()\\n\\n# Extra...",
-  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 9, in <module>\r\n    print(f'{i+1}. {t[:120]}')\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^\r\nUnicodeEncodeError: 'cp949' codec can't encode character '\\u2010' in position 75: illegal multibyte sequence\r\n1. Greatly increased toughness of infiltrated spider silk\r\n2. 503\r\n3. Fast synthesis of high-performance graphene films by hydrogen-free rapid thermal chemical vapor deposition\r\n4. 253\r\n5. Graphene as flexible electronic materials: mechan...",
-  "timestamp": "2026-04-02T08:35:34.325Z",
+  "tool_input_preview": "{\"command\":\"python3 << 'EOF'\\nimport json\\n\\nsessions = [\\n    ('b89b2d4e (오늘)', 'C:/Users/SMLEE/.claude/projects/D--23-GitHub-01-Office-PC-030-Project-032-Proposed-Project-07----------/b89b2d4e-5c82-...",
+  "error": "Exit code 49\n[rerun: b10]",
+  "timestamp": "2026-04-07T02:37:56.947Z",
   "retry_count": 1
 }

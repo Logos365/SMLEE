@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775092947490,
-  "projectRoot": "D:\\23_GitHub\\01_Office_PC",
+  "lastScanned": 1775528926596,
+  "projectRoot": "d:\\23_GitHub\\01_Office_PC",
   "techStack": {
     "languages": [],
     "frameworks": [],
@@ -36,7 +36,7 @@
       "path": "000_Template",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1775092946898,
+      "lastAccessed": 1775528925692,
       "keyFiles": [
         "20260327_Template.md",
         "My Diary Template.md",
@@ -47,7 +47,7 @@
       "path": "010_Diary",
       "purpose": null,
       "fileCount": 5,
-      "lastAccessed": 1775092946900,
+      "lastAccessed": 1775528925693,
       "keyFiles": [
         "2026-03-09.md",
         "2026-03-12.md",
@@ -60,7 +60,7 @@
       "path": "020_AI Learning",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946901,
+      "lastAccessed": 1775528925695,
       "keyFiles": [
         "260119-2_obsidian_beginner_guide.pptx"
       ]
@@ -69,14 +69,14 @@
       "path": "030_Project",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1775092946902,
+      "lastAccessed": 1775528925696,
       "keyFiles": []
     },
     "040_Areas": {
       "path": "040_Areas",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946904,
+      "lastAccessed": 1775528925697,
       "keyFiles": [
         "Readme.md"
       ]
@@ -85,7 +85,7 @@
       "path": "050_Resources",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946905,
+      "lastAccessed": 1775528925698,
       "keyFiles": [
         "Readme.md"
       ]
@@ -94,7 +94,7 @@
       "path": "060_Research",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946906,
+      "lastAccessed": 1775528925700,
       "keyFiles": [
         "054_Conferences.md"
       ]
@@ -103,7 +103,7 @@
       "path": "070_Lecture",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946907,
+      "lastAccessed": 1775528925701,
       "keyFiles": [
         "Readme.md"
       ]
@@ -112,14 +112,14 @@
       "path": "080_Supervision",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1775092946909,
+      "lastAccessed": 1775528925702,
       "keyFiles": []
     },
     "090_Archive": {
       "path": "090_Archive",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1775092946910,
+      "lastAccessed": 1775528925703,
       "keyFiles": [
         "00_Readme.md",
         "Getting started with OneDrive.pdf"
@@ -129,7 +129,7 @@
       "path": "Attached File",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946911,
+      "lastAccessed": 1775528925704,
       "keyFiles": [
         "Pasted image 20260124154039.png"
       ]
@@ -138,7 +138,7 @@
       "path": "attachments",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946912,
+      "lastAccessed": 1775528925706,
       "keyFiles": [
         "미래소재디스커버리_연구기획_보고서.docx"
       ]
@@ -147,7 +147,7 @@
       "path": "TaskNotes",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946914,
+      "lastAccessed": 1775528925707,
       "keyFiles": [
         "설정관련 안내 pdf.md"
       ]
@@ -156,7 +156,7 @@
       "path": "_types",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775092946915,
+      "lastAccessed": 1775528925708,
       "keyFiles": [
         "task.md"
       ]
@@ -165,7 +165,7 @@
       "path": "TaskNotes\\Views",
       "purpose": "View templates",
       "fileCount": 6,
-      "lastAccessed": 1775092946926,
+      "lastAccessed": 1775528925718,
       "keyFiles": [
         "agenda-default.base",
         "calendar-default.base",
@@ -175,99 +175,15 @@
   },
   "hotPaths": [
     {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\나의 논문 리스트 1.md",
-      "accessCount": 5,
-      "lastAccessed": 1775116446670,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\나의 논문 리스트.md",
-      "accessCount": 2,
-      "lastAccessed": 1775093215740,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\컨소시움 관련.md",
-      "accessCount": 2,
-      "lastAccessed": 1775116215431,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\수요조사서 제출.md",
+      "path": "C:\\Users\\SMLEE\\.claude\\projects\\D--23-GitHub-01-Office-PC\\memory",
       "accessCount": 1,
-      "lastAccessed": 1775093147915,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\수요조사서_구조형배터리복합소재.md",
-      "accessCount": 1,
-      "lastAccessed": 1775093626955,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\06_미래융합파이오니어_수요조사\\make_docx.py",
-      "accessCount": 1,
-      "lastAccessed": 1775095411061,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지",
-      "accessCount": 1,
-      "lastAccessed": 1775116362942,
+      "lastAccessed": 1775529168565,
       "type": "directory"
     },
     {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_6.txt",
+      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\박준우박사_컨소시엄문의_이메일.md",
       "accessCount": 1,
-      "lastAccessed": 1775116371731,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_7.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775116372163,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_8.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775116372617,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_9.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775116373308,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_10.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775116374173,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\pdf_page_11.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775116377716,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\paper_titles.txt",
-      "accessCount": 1,
-      "lastAccessed": 1775119104428,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\연구과제_기획안.md",
-      "accessCount": 1,
-      "lastAccessed": 1775120109450,
-      "type": "file"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\과제선택_비교분석.md",
-      "accessCount": 1,
-      "lastAccessed": 1775122091363,
+      "lastAccessed": 1775531512386,
       "type": "file"
     }
   ],
