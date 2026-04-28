@@ -190,21 +190,21 @@ para(doc, '', before=2, after=2)
 heading(doc, '2) 연구과제의 내용', size=11, bold=True, before=4, after=3)
 
 fig_caption(doc, '[그림 2]',
-            '연구 로드맵 및 Task 구성도. 상단에 전체 연구 흐름(Task 1→2→3) 화살표 다이어그램, 하단에 4개 연차별 주요 연구 활동 간트 차트(Gantt chart). '
+            '연구 로드맵 및 Task 구성도. 상단에 전체 연구 흐름(Task 1→2→3) 화살표 다이어그램, 하단에 3개 연차별 주요 연구 활동 간트 차트(Gantt chart). '
             '각 Task 박스 내에 핵심 분석법 아이콘(TEM/XPS/EIS/DFT) 배치. 레이아웃: 세로형, A4 절반 크기.')
 
-heading(doc, 'Task 1. ALD 불화물 박막 합성 및 계면 특성 분석 (1~2년차)', size=10.5, bold=True, before=4, after=2)
+heading(doc, 'Task 1. ALD 불화물 박막 합성 및 계면 특성 분석 (1년차)', size=10.5, bold=True, before=4, after=2)
 bullet(doc, 'ZnF2, AlF3, LiF ALD 전구체·반응물 최적화 및 증착 조건(온도, 사이클 수, 박막 두께 5~100 nm) 체계적 탐색')
 bullet(doc, 'XRD, XPS, ToF-SIMS, TEM/EDS를 이용한 결정구조·화학 조성·계면 결합 상태 분석')
 bullet(doc, 'EIS 및 Li+ 이온 전도도 측정으로 이온 수송 특성 평가; 핀홀-프리(pinhole-free) 박막 합성 조건 확립')
 
-heading(doc, 'Task 2. In-situ/Operando 분석 기반 Li 핵생성 메커니즘 규명 (2~3년차)', size=10.5, bold=True, before=4, after=2)
+heading(doc, 'Task 2. In-situ/Operando 분석 기반 Li 핵생성 메커니즘 규명 (1~2년차)', size=10.5, bold=True, before=4, after=2)
 bullet(doc, 'Cryo-TEM 및 AFM을 이용한 초기 Li 핵생성(nucleation) 나노구조의 실시간 관찰')
 bullet(doc, 'Operando XRD 및 in-situ SEM을 통한 충·방전 중 Li 증착/용해 거동 및 SEI 진화 모니터링')
 bullet(doc, 'DFT(밀도함수이론) 계산으로 불화물/Li 계면에서의 Li+ 이온 확산 에너지 배리어 이론적 규명')
 bullet(doc, '불화물 박막 두께·조성에 따른 Li 핵생성 과전압 및 증착 균일도 상관관계 데이터베이스 구축')
 
-heading(doc, 'Task 3. Full Cell 평가 및 인공 SEI 설계 원칙 도출 (3~4년차)', size=10.5, bold=True, before=4, after=2)
+heading(doc, 'Task 3. Full Cell 평가 및 인공 SEI 설계 원칙 도출 (2~3년차)', size=10.5, bold=True, before=4, after=2)
 bullet(doc, 'ALD 코팅된 Li 금속 음극을 적용한 Li||NCM 풀 셀 제작 및 장기 사이클(>300회) 성능 평가')
 bullet(doc, 'Post-mortem 분석(XPS, TEM)으로 사이클 후 SEI 조성 변화 추적 및 열화 메커니즘 규명')
 bullet(doc, 'ZnF2 vs AlF3 vs LiF 비교 분석을 통한 범용 "ALD 기반 인공 SEI 설계 원칙" 제안')
@@ -212,7 +212,7 @@ bullet(doc, '목표 성능: 쿨롱 효율(CE) >99.5%, 300사이클 후 용량 �
 
 # Year table
 heading(doc, '【연차별 목표 요약】', size=10.5, before=4, after=2)
-tbl3 = doc.add_table(rows=5, cols=3)
+tbl3 = doc.add_table(rows=4, cols=3)
 tbl3.style = 'Table Grid'
 tbl3.columns[0].width = Cm(1.8)
 tbl3.columns[1].width = Cm(8.5)
@@ -222,15 +222,14 @@ hdr[0].text = '연차'
 hdr[1].text = '주요 연구 내용'
 hdr[2].text = '핵심 성과물'
 rows_data = [
-    ('1년차', 'ZnF2/AlF3 ALD 증착 조건 최적화, XPS/TEM 박막 분석', 'ALD 레시피 확립, 박막 특성 데이터'),
-    ('2년차', 'In-situ AFM 핵생성 관찰, EIS 분석, 박막 두께-성능 상관관계 규명', 'SCI 논문 1편, 핵생성 과전압 데이터베이스'),
-    ('3년차', 'Operando XRD/Cryo-TEM, DFT 계산, Full cell 프로토타입 제작', 'SCI 논문 1편, 메커니즘 규명'),
-    ('4년차', 'Full cell 장기 평가, Post-mortem 분석, 설계 원칙 도출', 'SCI 논문 1편, 특허 출원, 설계 원칙 제안'),
+    ('1년차', 'ZnF2/AlF3/LiF ALD 증착 조건 최적화, XPS/TEM 박막 분석, EIS 이온 전도도 평가, in-situ AFM 핵생성 관찰', 'ALD 레시피 확립, 박막 특성 데이터, SCI 논문 1편'),
+    ('2년차', 'Operando XRD/Cryo-TEM 충방전 중 SEI 진화 모니터링, DFT 계산(Li+ 확산 에너지 배리어), 박막 두께·조성 상관관계 데이터베이스 구축', 'SCI 논문 1편, 핵생성 메커니즘 규명, 특허 출원'),
+    ('3년차', 'Li||NCM Full cell 장기 사이클 평가(>300회), Post-mortem 분석, ZnF2/AlF3/LiF 비교, 인공 SEI 설계 원칙 도출', 'SCI 논문 1편, 인공 SEI 설계 원칙 제안, 특허 등록'),
 ]
 for i, (yr, cont, out) in enumerate(rows_data):
-    tbl3.rows[i+1].cells[0].text = yr
-    tbl3.rows[i+1].cells[1].text = cont
-    tbl3.rows[i+1].cells[2].text = out
+    tbl3.rows[i + 1].cells[0].text = yr
+    tbl3.rows[i + 1].cells[1].text = cont
+    tbl3.rows[i + 1].cells[2].text = out
 for row in tbl3.rows:
     for cell in row.cells:
         for pp in cell.paragraphs:
