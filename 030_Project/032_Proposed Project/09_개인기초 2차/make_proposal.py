@@ -1,39 +1,90 @@
 from docx import Document
 from docx.shared import Pt, Cm, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
 
-doc = Document()
 
-# Page margins
-section = doc.sections[0]
-section.page_height = Cm(29.7)
-section.page_width = Cm(21.0)
-section.left_margin = Cm(2.5)
-section.right_margin = Cm(2.5)
-section.top_margin = Cm(2.5)
-section.bottom_margin = Cm(2.5)
+# ── XML helpers ───────────────────────────────────────────────────────────────
 
-# Default style
-style = doc.styles['Normal']
-style.font.name = '맑은 고딕'
-style.font.size = Pt(10)
+def set_shading(paragraph, fill_hex):
+    pPr = paragraph._p.get_or_add_pPr()
+    for shd in pPr.findall(qn('w:shd')):
+        pPr.remove(shd)
+    shd = OxmlElement('w:shd')
+    shd.set(qn('w:val'), 'clear')
+    shd.set(qn('w:color'), 'auto')
+    shd.set(qn('w:fill'), fill_hex)
+    pPr.append(shd)
 
+
+def set_left_border(paragraph, color_hex, sz=30, space=8):
+    pPr = paragraph._p.get_or_add_pPr()
+    for existing in pPr.findall(qn('w:pBdr')):
+        pPr.remove(existing)
+    pBdr = OxmlElement('w:pBdr')
+    left = OxmlElement('w:left')
+    left.set(qn('w:val'), 'single')
+    left.set(qn('w:sz'), str(sz))
+    left.set(qn('w:space'), str(space))
+    left.set(qn('w:color'), color_hex)
+    pBdr.append(left)
+    pPr.append(pBdr)
+
+
+# ── Color palette ─────────────────────────────────────────────────────────────
+C_NAVY  = '1F3864'   # dark navy  → Level-1 full-width background
+C_BLUE  = '2E75B6'   # steel blue → Task background / Level-2 border
+C_AMBER = 'C55A11'   # amber      → 【special】 accent
+
+
+# ── Document helpers ──────────────────────────────────────────────────────────
 
 def heading(doc, text, size=12, bold=True, before=8, after=4):
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(before)
-    p.paragraph_format.space_after = Pt(after)
-    run = p.add_run(text)
-    run.font.size = Pt(size)
-    run.font.bold = bold
-    run.font.name = '맑은 고딕'
+    p.paragraph_format.space_after  = Pt(after)
+
+    if size == 12:
+        # ■ Level-1: full-width dark-navy background, white text
+        set_shading(p, C_NAVY)
+        run = p.add_run('  ' + text)
+        run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+    elif size == 11:
+        # ■ Level-2: thick steel-blue left bar, dark-navy text, slight indent
+        set_left_border(p, C_BLUE, sz=30, space=8)
+        p.paragraph_format.left_indent = Cm(0.1)
+        run = p.add_run('  ' + text)
+        run.font.color.rgb = RGBColor(0x1F, 0x38, 0x64)
+
+    elif size == 10.5 and '【' in text:
+        # ■ Special 【】: thin amber left bar, amber text
+        set_left_border(p, C_AMBER, sz=12, space=8)
+        p.paragraph_format.left_indent = Cm(0.1)
+        run = p.add_run('  ' + text)
+        run.font.color.rgb = RGBColor(0xC5, 0x5A, 0x11)
+
+    elif size == 10.5:
+        # ■ Task level: steel-blue background, white text, indented block
+        set_shading(p, C_BLUE)
+        p.paragraph_format.left_indent = Cm(0.5)
+        run = p.add_run('  ' + text)
+        run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+    else:
+        run = p.add_run(text)
+
+    run.font.size  = Pt(size)
+    run.font.bold  = bold
+    run.font.name  = '맑은 고딕'
     return p
 
 
 def para(doc, text, size=10, indent=0, before=2, after=4):
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(before)
-    p.paragraph_format.space_after = Pt(after)
+    p.paragraph_format.space_after  = Pt(after)
     if indent:
         p.paragraph_format.left_indent = Cm(indent)
     run = p.add_run(text)
@@ -44,29 +95,52 @@ def para(doc, text, size=10, indent=0, before=2, after=4):
 
 def bullet(doc, text, size=10):
     p = doc.add_paragraph()
-    p.paragraph_format.left_indent = Cm(0.7)
-    p.paragraph_format.first_line_indent = Cm(-0.4)
-    p.paragraph_format.space_before = Pt(1)
-    p.paragraph_format.space_after = Pt(2)
-    run = p.add_run('• ' + text)
-    run.font.size = Pt(size)
-    run.font.name = '맑은 고딕'
+    p.paragraph_format.left_indent       = Cm(0.9)
+    p.paragraph_format.first_line_indent = Cm(-0.5)
+    p.paragraph_format.space_before      = Pt(1)
+    p.paragraph_format.space_after       = Pt(2)
+    # Colored triangle bullet
+    r1 = p.add_run('▸ ')
+    r1.font.size      = Pt(size)
+    r1.font.name      = '맑은 고딕'
+    r1.font.color.rgb = RGBColor(0x2E, 0x75, 0xB6)
+    r2 = p.add_run(text)
+    r2.font.size = Pt(size)
+    r2.font.name = '맑은 고딕'
     return p
 
 
 def fig_caption(doc, label, desc):
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(3)
-    p.paragraph_format.space_after = Pt(6)
-    p.paragraph_format.left_indent = Cm(0.5)
+    p.paragraph_format.space_after  = Pt(6)
+    p.paragraph_format.left_indent  = Cm(0.5)
     r1 = p.add_run(label + ' ')
-    r1.font.bold = True
-    r1.font.size = Pt(9.5)
-    r1.font.name = '맑은 고딕'
+    r1.font.bold      = True
+    r1.font.size      = Pt(9.5)
+    r1.font.name      = '맑은 고딕'
+    r1.font.color.rgb = RGBColor(0x2E, 0x75, 0xB6)
     r2 = p.add_run(desc)
-    r2.font.size = Pt(9)
-    r2.font.name = '맑은 고딕'
+    r2.font.size      = Pt(9)
+    r2.font.name      = '맑은 고딕'
     r2.font.color.rgb = RGBColor(0x33, 0x33, 0x33)
+
+
+# ===== DOCUMENT ===============================================================
+
+doc = Document()
+
+section = doc.sections[0]
+section.page_height   = Cm(29.7)
+section.page_width    = Cm(21.0)
+section.left_margin   = Cm(2.5)
+section.right_margin  = Cm(2.5)
+section.top_margin    = Cm(2.5)
+section.bottom_margin = Cm(2.5)
+
+style = doc.styles['Normal']
+style.font.name = '맑은 고딕'
+style.font.size = Pt(10)
 
 
 # ===== COVER =====
@@ -210,7 +284,6 @@ bullet(doc, 'Post-mortem 분석(XPS, TEM)으로 사이클 후 SEI 조성 변화 
 bullet(doc, 'ZnF2 vs AlF3 vs LiF 비교 분석을 통한 범용 "ALD 기반 인공 SEI 설계 원칙" 제안')
 bullet(doc, '목표 성능: 쿨롱 효율(CE) >99.5%, 300사이클 후 용량 유지율 >80%')
 
-# Year table
 heading(doc, '【연차별 목표 요약】', size=10.5, before=4, after=2)
 tbl3 = doc.add_table(rows=4, cols=3)
 tbl3.style = 'Table Grid'
@@ -243,7 +316,7 @@ para(doc,
      'Li 금속 음극의 덴드라이트 억제는 전 세계적으로 아직 완전히 해결되지 않은 난제이다. 본 연구는 ALD의 원자 수준 정밀 제어를 이용하여 인공 SEI의 이온 전도 메커니즘을 근본적으로 규명한다는 점에서 도전적이며, in-situ/operando 분석과 DFT 계산을 결합한 다학제적 접근이 기존 연구와 차별화되는 핵심 특징이다. 성공 시 대한민국 배터리 소재 분야의 글로벌 원천 기술 선점에 기여한다.',
      before=2)
 
-# References
+# ===== REFERENCES =====
 doc.add_page_break()
 heading(doc, '참고문헌 (Reference)', size=12, before=4, after=4)
 refs = [
@@ -261,11 +334,11 @@ refs = [
 for ref in refs:
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(1)
-    p.paragraph_format.space_after = Pt(2)
+    p.paragraph_format.space_after  = Pt(2)
     run = p.add_run(ref)
     run.font.size = Pt(9)
     run.font.name = '맑은 고딕'
 
-out_path = '연구계획서_초안_이승모_ALD_Li음극.docx'
+out_path = '연구계획서_초안_이승모_ALD_Li음극_v2.docx'
 doc.save(out_path)
 print('Saved:', out_path)

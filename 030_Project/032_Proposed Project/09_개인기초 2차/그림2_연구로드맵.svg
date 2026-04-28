@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="794" height="555" viewBox="0 0 794 555">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#37474F"/>
+    </marker>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#43A047"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FB8C00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="794" height="555" fill="white" stroke="#90A4AE" stroke-width="1"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- FIGURE HEADER                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="0" y="0" width="794" height="34" fill="#283593"/>
+  <text x="397" y="22" text-anchor="middle"
+        font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif"
+        font-size="13" font-weight="bold" fill="white">
+    [그림 2]  연구 로드맵 및 Task 구성도
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- SECTION 1 : TASK FLOW  (y=34 ~ y=252)                 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="0" y="34" width="794" height="218" fill="#F1F3F9"/>
+  <text x="16" y="47" font-family="'Malgun Gothic',sans-serif" font-size="9.5" font-weight="bold" fill="#3949AB">▶ 연구 단계별 흐름</text>
+
+  <!-- ─── TASK 1 BOX (x=18, w=225) ─── -->
+  <rect x="18" y="52" width="225" height="188" rx="7" fill="white" stroke="#1565C0" stroke-width="1.5"/>
+  <rect x="18" y="52" width="225" height="34" rx="7" fill="url(#g1)"/>
+  <rect x="18" y="71" width="225" height="15" fill="#1565C0"/>
+  <text x="130" y="67" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">Task 1. ALD 불화물 박막 합성</text>
+  <text x="130" y="80" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">및 계면 특성 분석</text>
+  <!-- year badge -->
+  <rect x="79" y="90" width="102" height="14" rx="7" fill="#0D47A1"/>
+  <text x="130" y="101" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#E3F2FD">■  1년차</text>
+  <!-- bullets -->
+  <text x="24" y="119" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• 전구체·반응물 최적화 (ZnF₂, AlF₃, LiF)</text>
+  <text x="24" y="133" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• 증착 조건 탐색 (두께 5~100 nm)</text>
+  <text x="24" y="147" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• XRD·XPS·TEM/EDS 결정구조 분석</text>
+  <text x="24" y="161" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• ToF-SIMS 계면 결합 상태 분석</text>
+  <text x="24" y="175" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• EIS · Li⁺ 이온전도도 평가</text>
+  <text x="24" y="189" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1A237E">• Pinhole-free 합성 조건 확립</text>
+  <!-- method badges -->
+  <rect x="22"  y="198" width="28" height="12" rx="3" fill="#1565C0"/><text x="36"  y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">XRD</text>
+  <rect x="54"  y="198" width="28" height="12" rx="3" fill="#1565C0"/><text x="68"  y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">XPS</text>
+  <rect x="86"  y="198" width="28" height="12" rx="3" fill="#1565C0"/><text x="100" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">TEM</text>
+  <rect x="118" y="198" width="24" height="12" rx="3" fill="#1565C0"/><text x="130" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">EIS</text>
+  <rect x="146" y="198" width="50" height="12" rx="3" fill="#1565C0"/><text x="171" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">ToF-SIMS</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="244" y1="146" x2="281" y2="146" stroke="#455A64" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="262" y="140" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#546E7A">계면</text>
+  <text x="262" y="158" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#546E7A">정보</text>
+
+  <!-- ─── TASK 2 BOX (x=284, w=225) ─── -->
+  <rect x="284" y="52" width="225" height="188" rx="7" fill="white" stroke="#2E7D32" stroke-width="1.5"/>
+  <rect x="284" y="52" width="225" height="34" rx="7" fill="url(#g2)"/>
+  <rect x="284" y="71" width="225" height="15" fill="#2E7D32"/>
+  <text x="396" y="67" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">Task 2. In-situ/Operando 분석</text>
+  <text x="396" y="80" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">Li 핵생성 메커니즘 규명</text>
+  <!-- year badge -->
+  <rect x="345" y="90" width="102" height="14" rx="7" fill="#1B5E20"/>
+  <text x="396" y="101" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#E8F5E9">■  1~2년차</text>
+  <!-- bullets -->
+  <text x="290" y="119" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1B5E20">• Cryo-TEM·AFM Li 핵생성 실시간 관찰</text>
+  <text x="290" y="133" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1B5E20">• Operando XRD 충·방전 중 Li 거동</text>
+  <text x="290" y="147" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1B5E20">• in-situ SEM SEI 진화 모니터링</text>
+  <text x="290" y="161" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1B5E20">• DFT: 불화물/Li 계면 확산 배리어</text>
+  <text x="290" y="175" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#1B5E20">• 과전압·증착 균일도 데이터베이스 구축</text>
+  <!-- method badges -->
+  <rect x="288" y="198" width="48" height="12" rx="3" fill="#2E7D32"/><text x="312" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">Cryo-TEM</text>
+  <rect x="340" y="198" width="28" height="12" rx="3" fill="#2E7D32"/><text x="354" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">AFM</text>
+  <rect x="372" y="198" width="42" height="12" rx="3" fill="#2E7D32"/><text x="393" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">Op.XRD</text>
+  <rect x="418" y="198" width="28" height="12" rx="3" fill="#2E7D32"/><text x="432" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">DFT</text>
+  <rect x="450" y="198" width="54" height="12" rx="3" fill="#2E7D32"/><text x="477" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">in-situ SEM</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="510" y1="146" x2="547" y2="146" stroke="#455A64" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="528" y="140" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#546E7A">메커니즘</text>
+  <text x="528" y="158" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#546E7A">규명</text>
+
+  <!-- ─── TASK 3 BOX (x=551, w=225) ─── -->
+  <rect x="551" y="52" width="225" height="188" rx="7" fill="white" stroke="#E65100" stroke-width="1.5"/>
+  <rect x="551" y="52" width="225" height="34" rx="7" fill="url(#g3)"/>
+  <rect x="551" y="71" width="225" height="15" fill="#FB8C00"/>
+  <text x="663" y="67" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">Task 3. Full Cell 평가 및</text>
+  <text x="663" y="80" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="white">인공 SEI 설계 원칙 도출</text>
+  <!-- year badge -->
+  <rect x="612" y="90" width="102" height="14" rx="7" fill="#BF360C"/>
+  <text x="663" y="101" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#FFF3E0">■  2~3년차</text>
+  <!-- bullets -->
+  <text x="557" y="119" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#BF360C">• Li||NCM 풀 셀 제작 및 장기 사이클</text>
+  <text x="557" y="133" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#BF360C">  (&gt;300 사이클, CE &gt;99.5%)</text>
+  <text x="557" y="147" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#BF360C">• Post-mortem XPS/TEM SEI 분석</text>
+  <text x="557" y="161" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#BF360C">• ZnF₂ vs AlF₃ vs LiF 비교 분석</text>
+  <text x="557" y="175" font-family="'Malgun Gothic',sans-serif" font-size="8.5" fill="#BF360C">• ALD 기반 인공 SEI 설계 원칙 제안</text>
+  <!-- target performance box -->
+  <rect x="556" y="183" width="212" height="13" rx="3" fill="#FFE0B2" stroke="#E65100" stroke-width="0.5"/>
+  <text x="662" y="193" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="8" fill="#BF360C" font-weight="bold">목표: CE &gt;99.5%  |  용량유지율 &gt;80%</text>
+  <!-- method badges -->
+  <rect x="556" y="200" width="28" height="12" rx="3" fill="#E65100"/><text x="570" y="209" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">XPS</text>
+  <rect x="588" y="200" width="28" height="12" rx="3" fill="#E65100"/><text x="602" y="209" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">TEM</text>
+  <rect x="620" y="200" width="62" height="12" rx="3" fill="#E65100"/><text x="651" y="209" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">Full-Cell</text>
+  <rect x="686" y="200" width="78" height="12" rx="3" fill="#E65100"/><text x="725" y="209" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="bold" fill="white">Post-mortem</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- SECTION DIVIDER                                        -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="0" y="252" width="794" height="3" fill="#3949AB"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- SECTION 2 : GANTT CHART  (y=255 ~ y=555)              -->
+  <!-- Label col: x=0..162 | Chart: x=163..775               -->
+  <!-- Quarter width = 51px | 12Q total = 612px              -->
+  <!-- Q-starts: 163,214,265,316 | 367,418,469,520 | 571,622,673,724 | end=775 -->
+  <!-- Row h=27px, rows start y=310, 9 rows → end y=553      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="0" y="255" width="794" height="300" fill="white"/>
+  <text x="16" y="271" font-family="'Malgun Gothic',sans-serif" font-size="9.5" font-weight="bold" fill="#3949AB">▶ 연차별 연구 추진 일정 (간트 차트)</text>
+
+  <!-- Year header bars -->
+  <rect x="163" y="277" width="204" height="20" fill="#C5CAE9"/>
+  <text x="265" y="291" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="#1A237E">1년차</text>
+  <rect x="367" y="277" width="204" height="20" fill="#BBDEFB"/>
+  <text x="469" y="291" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="#0D47A1">2년차</text>
+  <rect x="571" y="277" width="204" height="20" fill="#B3E5FC"/>
+  <text x="673" y="291" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="10" font-weight="bold" fill="#01579B">3년차</text>
+
+  <!-- Quarter sub-header -->
+  <rect x="163" y="297" width="612" height="13" fill="#EDE7F6"/>
+  <text x="189" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">1Q</text>
+  <text x="240" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">2Q</text>
+  <text x="291" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">3Q</text>
+  <text x="342" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">4Q</text>
+  <text x="393" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">1Q</text>
+  <text x="444" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">2Q</text>
+  <text x="495" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">3Q</text>
+  <text x="546" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">4Q</text>
+  <text x="597" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">1Q</text>
+  <text x="648" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">2Q</text>
+  <text x="699" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">3Q</text>
+  <text x="750" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#5C6BC0">4Q</text>
+
+  <!-- Vertical grid lines -->
+  <line x1="163" y1="277" x2="163" y2="553" stroke="#7986CB" stroke-width="1"/>
+  <line x1="214" y1="310" x2="214" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="265" y1="310" x2="265" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="316" y1="310" x2="316" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="367" y1="277" x2="367" y2="553" stroke="#7986CB" stroke-width="1"/>
+  <line x1="418" y1="310" x2="418" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="469" y1="310" x2="469" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="520" y1="310" x2="520" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="571" y1="277" x2="571" y2="553" stroke="#7986CB" stroke-width="1"/>
+  <line x1="622" y1="310" x2="622" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="673" y1="310" x2="673" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="724" y1="310" x2="724" y2="553" stroke="#C5CAE9" stroke-width="0.5"/>
+  <line x1="775" y1="277" x2="775" y2="553" stroke="#7986CB" stroke-width="0.5"/>
+
+  <!-- Row background tints -->
+  <rect x="0"   y="310" width="163" height="81" fill="#E3F2FD"/>
+  <rect x="163" y="310" width="612" height="81" fill="#F5F9FF"/>
+  <rect x="0"   y="391" width="163" height="81" fill="#E8F5E9"/>
+  <rect x="163" y="391" width="612" height="81" fill="#F5FFF5"/>
+  <rect x="0"   y="472" width="163" height="81" fill="#FFF3E0"/>
+  <rect x="163" y="472" width="612" height="81" fill="#FFFBF5"/>
+
+  <!-- Task group accent bars -->
+  <rect x="0" y="310" width="5" height="81" fill="#1565C0"/>
+  <rect x="0" y="391" width="5" height="81" fill="#2E7D32"/>
+  <rect x="0" y="472" width="5" height="81" fill="#E65100"/>
+
+  <!-- Horizontal row separators -->
+  <line x1="0" y1="337" x2="775" y2="337" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="364" x2="775" y2="364" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="391" x2="775" y2="391" stroke="#7986CB" stroke-width="1"/>
+  <line x1="0" y1="418" x2="775" y2="418" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="445" x2="775" y2="445" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="472" x2="775" y2="472" stroke="#7986CB" stroke-width="1"/>
+  <line x1="0" y1="499" x2="775" y2="499" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="526" x2="775" y2="526" stroke="#DEE2E6" stroke-width="0.5"/>
+  <line x1="0" y1="553" x2="775" y2="553" stroke="#7986CB" stroke-width="1"/>
+  <line x1="163" y1="310" x2="163" y2="553" stroke="#7986CB" stroke-width="1"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GANTT ROWS                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- ROW 1  y=310~337  ALD 최적화  Q1→Q4 (x=164, w=202) -->
+  <text x="8"  y="321" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#1565C0" font-weight="bold">① ALD 증착 조건 최적화</text>
+  <text x="8"  y="333" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#1565C0">(ZnF₂, AlF₃, LiF)</text>
+  <rect x="164" y="315" width="202" height="15" rx="3" fill="#1565C0"/>
+  <text x="265" y="326" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">전구체 최적화 및 ALD 파라미터 탐색</text>
+
+  <!-- ROW 2  y=337~364  박막 분석  Q2→Q6 (x=215, w=253) -->
+  <text x="8"  y="348" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#1565C0" font-weight="bold">② 박막 구조·화학 조성 분석</text>
+  <text x="8"  y="360" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#1565C0">(XRD / XPS / TEM / ToF-SIMS)</text>
+  <rect x="215" y="342" width="253" height="15" rx="3" fill="#1976D2"/>
+  <text x="341" y="353" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">XRD / XPS / TEM-EDS / ToF-SIMS 분석</text>
+
+  <!-- ROW 3  y=364~391  EIS  Q3→Q4 (x=266, w=100) -->
+  <text x="8"  y="375" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#1565C0" font-weight="bold">③ EIS · Li⁺ 이온전도도 평가</text>
+  <text x="8"  y="387" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#1565C0">(pinhole-free 조건 확립)</text>
+  <rect x="266" y="369" width="100" height="15" rx="3" fill="#283593"/>
+  <text x="316" y="380" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">EIS · Li⁺ 이온전도도</text>
+
+  <!-- ROW 4  y=391~418  Cryo-TEM  Q3→Q8 (x=266, w=304) -->
+  <text x="8"  y="402" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#2E7D32" font-weight="bold">④ Cryo-TEM / AFM 핵생성 관찰</text>
+  <text x="8"  y="414" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#2E7D32">Li 핵생성 나노구조 실시간 관찰</text>
+  <rect x="266" y="396" width="304" height="15" rx="3" fill="#2E7D32"/>
+  <text x="418" y="407" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">Cryo-TEM / AFM — Li 핵생성 나노구조 관찰</text>
+
+  <!-- ROW 5  y=418~445  Operando  Q4→Q8 (x=317, w=253) -->
+  <text x="8"  y="429" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#2E7D32" font-weight="bold">⑤ Operando XRD / in-situ SEM</text>
+  <text x="8"  y="441" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#2E7D32">Li 증착·용해 거동 모니터링</text>
+  <rect x="317" y="423" width="253" height="15" rx="3" fill="#388E3C"/>
+  <text x="443" y="434" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">Operando XRD / in-situ SEM 모니터링</text>
+
+  <!-- ROW 6  y=445~472  DFT  Q4→Q8 (x=317, w=253) -->
+  <text x="8"  y="456" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#2E7D32" font-weight="bold">⑥ DFT 이론 계산</text>
+  <text x="8"  y="468" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#2E7D32">계면 Li⁺ 확산 에너지 배리어</text>
+  <rect x="317" y="450" width="253" height="15" rx="3" fill="#1B5E20"/>
+  <text x="443" y="461" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">DFT: 불화물/Li 계면 Li⁺ 확산 에너지</text>
+
+  <!-- ROW 7  y=472~499  Full Cell  Q7→Q12 (x=470, w=304) -->
+  <text x="8"  y="483" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#E65100" font-weight="bold">⑦ Li||NCM 풀 셀 장기 사이클</text>
+  <text x="8"  y="495" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#E65100">&gt;300 사이클, CE &gt;99.5%</text>
+  <rect x="470" y="477" width="304" height="15" rx="3" fill="#E65100"/>
+  <text x="622" y="488" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">Li||NCM Full Cell 장기 사이클링 (&gt;300 cycles)</text>
+
+  <!-- ROW 8  y=499~526  Post-mortem  Q9→Q12 (x=572, w=202) -->
+  <text x="8"  y="510" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#E65100" font-weight="bold">⑧ Post-mortem XPS/TEM 분석</text>
+  <text x="8"  y="522" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#E65100">SEI 조성 변화·열화 메커니즘</text>
+  <rect x="572" y="504" width="202" height="15" rx="3" fill="#F57C00"/>
+  <text x="673" y="515" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">Post-mortem XPS / TEM 분석</text>
+
+  <!-- ROW 9  y=526~553  SEI 설계원칙  Q10→Q12 (x=623, w=151) -->
+  <text x="8"  y="537" font-family="'Malgun Gothic',sans-serif" font-size="8"   fill="#E65100" font-weight="bold">⑨ ALD 인공 SEI 설계 원칙 도출</text>
+  <text x="8"  y="549" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="#E65100">ZnF₂/AlF₃/LiF 비교 정립</text>
+  <rect x="623" y="531" width="151" height="15" rx="3" fill="#BF360C"/>
+  <text x="698" y="542" text-anchor="middle" font-family="'Malgun Gothic',sans-serif" font-size="7.5" fill="white">범용 ALD-SEI 설계 원칙 정립</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="553" width="794" height="2" fill="#283593"/>
+</svg>
