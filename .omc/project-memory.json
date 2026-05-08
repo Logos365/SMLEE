@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775528926596,
-  "projectRoot": "d:\\23_GitHub\\01_Office_PC",
+  "lastScanned": 1778214976235,
+  "projectRoot": "e:\\040_Git\\01_Gram",
   "techStack": {
     "languages": [],
     "frameworks": [],
@@ -35,32 +35,34 @@
     "000_Template": {
       "path": "000_Template",
       "purpose": null,
-      "fileCount": 3,
-      "lastAccessed": 1775528925692,
+      "fileCount": 7,
+      "lastAccessed": 1778214976171,
       "keyFiles": [
         "20260327_Template.md",
+        "Daily_Note Template.md",
         "My Diary Template.md",
-        "리뷰_영화_서울의 봄.md"
+        "Template practice.md",
+        "기억해야 할 말들.md"
       ]
     },
     "010_Diary": {
       "path": "010_Diary",
       "purpose": null,
-      "fileCount": 5,
-      "lastAccessed": 1775528925693,
+      "fileCount": 8,
+      "lastAccessed": 1778214976172,
       "keyFiles": [
         "2026-03-09.md",
         "2026-03-12.md",
         "2026-03-23.md",
-        "daily_report_2026-03-17.md",
-        "daily_report_gmail_2026-03-17.md"
+        "2026-04-15.md",
+        "2026-04-22.md"
       ]
     },
     "020_AI Learning": {
       "path": "020_AI Learning",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925695,
+      "lastAccessed": 1778214976173,
       "keyFiles": [
         "260119-2_obsidian_beginner_guide.pptx"
       ]
@@ -69,14 +71,14 @@
       "path": "030_Project",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1775528925696,
+      "lastAccessed": 1778214976174,
       "keyFiles": []
     },
     "040_Areas": {
       "path": "040_Areas",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925697,
+      "lastAccessed": 1778214976176,
       "keyFiles": [
         "Readme.md"
       ]
@@ -85,7 +87,7 @@
       "path": "050_Resources",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925698,
+      "lastAccessed": 1778214976177,
       "keyFiles": [
         "Readme.md"
       ]
@@ -93,17 +95,15 @@
     "060_Research": {
       "path": "060_Research",
       "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1775528925700,
-      "keyFiles": [
-        "054_Conferences.md"
-      ]
+      "fileCount": 0,
+      "lastAccessed": 1778214976179,
+      "keyFiles": []
     },
     "070_Lecture": {
       "path": "070_Lecture",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925701,
+      "lastAccessed": 1778214976180,
       "keyFiles": [
         "Readme.md"
       ]
@@ -112,14 +112,14 @@
       "path": "080_Supervision",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1775528925702,
+      "lastAccessed": 1778214976181,
       "keyFiles": []
     },
     "090_Archive": {
       "path": "090_Archive",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1775528925703,
+      "lastAccessed": 1778214976182,
       "keyFiles": [
         "00_Readme.md",
         "Getting started with OneDrive.pdf"
@@ -129,7 +129,7 @@
       "path": "Attached File",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925704,
+      "lastAccessed": 1778214976185,
       "keyFiles": [
         "Pasted image 20260124154039.png"
       ]
@@ -138,7 +138,7 @@
       "path": "attachments",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925706,
+      "lastAccessed": 1778214976186,
       "keyFiles": [
         "미래소재디스커버리_연구기획_보고서.docx"
       ]
@@ -147,7 +147,7 @@
       "path": "TaskNotes",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925707,
+      "lastAccessed": 1778214976187,
       "keyFiles": [
         "설정관련 안내 pdf.md"
       ]
@@ -156,7 +156,7 @@
       "path": "_types",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1775528925708,
+      "lastAccessed": 1778214976189,
       "keyFiles": [
         "task.md"
       ]
@@ -165,7 +165,7 @@
       "path": "TaskNotes\\Views",
       "purpose": "View templates",
       "fileCount": 6,
-      "lastAccessed": 1775528925718,
+      "lastAccessed": 1778214976202,
       "keyFiles": [
         "agenda-default.base",
         "calendar-default.base",
@@ -173,19 +173,6 @@
       ]
     }
   },
-  "hotPaths": [
-    {
-      "path": "C:\\Users\\SMLEE\\.claude\\projects\\D--23-GitHub-01-Office-PC\\memory",
-      "accessCount": 1,
-      "lastAccessed": 1775529168565,
-      "type": "directory"
-    },
-    {
-      "path": "030_Project\\032_Proposed Project\\07_미래혁신_이차전지\\박준우박사_컨소시엄문의_이메일.md",
-      "accessCount": 1,
-      "lastAccessed": 1775531512386,
-      "type": "file"
-    }
-  ],
+  "hotPaths": [],
   "userDirectives": []
 }
