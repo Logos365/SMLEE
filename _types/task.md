@@ -3,6 +3,7 @@ name: task
 description: A task managed by the TaskNotes plugin for Obsidian.
 display_name_key: title
 strict: false
+path_pattern: "TaskNotes/Tasks/{title}.md"
 
 match:
   where:
@@ -55,9 +56,11 @@ fields:
   dateCreated:
     type: datetime
     required: true
+    generated: now
     tn_role: dateCreated
   dateModified:
     type: datetime
+    generated: now_on_write
     tn_role: dateModified
   recurrence:
     type: string
