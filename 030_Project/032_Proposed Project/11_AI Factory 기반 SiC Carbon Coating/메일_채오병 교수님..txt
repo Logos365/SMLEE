@@ -1,0 +1,196 @@
+이재원 교수님.
+
+안녕하세요. 가천대 채오병입니다.
+안지환 교수님이 수정해주신 부분에 추가로 저도 수정하여 전달드립니다.
+주된 수정 내용은
+- SiC -> Si/C : SiC는 silicon carbide로 음극재로 사용하지 못하는 소재이고 Silicon carbon composite 복합체로 수정하였습니다.
+- ALD의 필요한 이유에 대해서 추가하였습니다.
+
+이외에도 AI가 표면 코팅 공정에 어떻게 적용되며 어떠한 역할을 하는지, AI가 필요한 이유에 대한 고찰을 추가로 해주시면 좋을 것 같습니다.
+
+첨부확인부탁드립니다.
+감사합니다.
+
+채오병 드림.
+
+2026년 7월 17일 (금) 오후 1:35, 안지환(기계공학과) < jihwanan@postech.ac.kr>님이 작성:
+이재원 교수님,
+
+
+
+안녕하세요, 포스텍 안지환입니다.
+
+AI팩토리 후보 과제 기획 관련하여 노고가 많으십니다.
+
+이용남 상무님께서 송부하신 과제뱅크 기획서 초안 수정본을 송부드립니다
+
+
+
+자율제조 대상 공정을 기존의 'carbon ALD 코팅' 대신 '연속식 음극재 ALD 코팅' 으로 하시면 어떠실지요. Risk 관리 및 사업 목적과의 정합성(Al factory 구축 중심) 면에서 장점이 있지 않을까 합니다. 검토를 부탁드립니다.
+
+또한 과제 성격에 맞도록 TRL은 4~7단계로 정의하는 것을 제안드립니다.
+
+
+
+전략 산업 분야 정합성이 높은 세계 최고 수준의 장비/공정의 AI팩토리 선제적 적용을 해나가기 위한 중요한 기술개발 과제 기획에 힘써주심에 감사드립니다.
+
+조만간 뵙도록 하겠습니다.
+
+
+
+감사합니다.
+안지환 드림
+
+------------------
+Jihwan An, Ph.D.
+
+Associate Professor, Department of Mechanical Engineering
+Director, Energy-NanoTech Integrated Design & Manufacturing Lab (ENTeR Lab)
+Adjunct Professor, Graduate School of Semiconductor Technology
+Adjunct Professor, Department of Battery Engineering
+Pohang University of Science and Technology (POSTECH)
+77 Cheongam-Ro, Nam-Gu, Pohang, Gyeongbuk, 37673 South Korea
+Email: jihwanan@postech.ac.kr
+Website: enterlab.postech.ac.kr
+Office: +82-54-279-2177
+Mobile: +82-10-5188-1182
+보낸 사람: 이재원 <jwlee11@hanyang.ac.kr>
+보낸 날짜: 2026년 7월 16일 목요일 오후 6:33:28
+받는 사람: 이용남
+참조: 안지환(기계공학과); 이승모; 채오병; 손동일; 이재주; 심규민; 손민혁; 손준혁
+제목: Re: [AI Factory 후보과제] AI 기반 SiC 음극재 자율제조 Manufacturing Platform 기획(안) 검토 및 자문 요청
+ 
+안녕하세요 상무님,
+한양대학교 ERICA 이재원 입니다.
+
+격무로 바쁘실텐데 빠른 대응 해주셔서 감사드립니다.
+과제기획 자료로 제출하고 다음 회의에 들어가서 도움 드릴 수 있도록 최대한 어필을 해보겠습니다.
+
+즐거운 휴일 되시기 바랍니다.
+
+감사합니다.
+이재원 드림.
+
+Jaewon Lee, Ph.D.
+Assistant Professor
+Department of Battery and Chemical Engineering, Hanyang University
+55 Hanyangdaehak-ro, Sangnok-gu, Ansan, Republic of Korea (15588)
+Process Systems Engineering & Intelligence Design Lab. (PSID)  
+Editor, Journal of Industrial and Engineering Chemistry (JIEC)
+TEL. 031-400-5273 / 010-3298-0600
+Lab homepage https://psid.hanyang.ac.kr
+
+
+2026년 7월 16일 (목) 오후 4:39, 이용남 < ynlee63@dsv.co.kr>님이 작성:
+제목 : [AI Factory 후보과제] AI 기반 SiC 음극재 자율제조 Manufacturing Platform 기획(안) 검토 및 자문 요청
+
+
+
+수신 : 한양대학교 ERICA 이재원 교수님
+참조 : POSTECH 안지환 교수님, 한국기계연구원 이승모 박사님, 가천대학교 채오병 교수님
+
+
+
+안녕하십니까, 교수님.
+
+대성기계공업 이용남입니다.
+
+
+
+항상 아낌없는 지도와 조언에 깊이 감사드립니다.
+
+
+
+교수님께서 산업통상자원부 AI Factory(M.AX) 국책과제 기획위원으로 참여하시어 본 AI Factory 과제를 기획하고 계신 것으로 알고 있습니다. 이에 당사에서 검토 중인 AI Factory 후보과제 기획(안)을 정리하여 공유드리며, 교수님의 검토와 고견을 부탁드리고자 합니다.
+
+
+
+당사는 현재 AI 기반 50 kg/hr급 SiC 음극재용 자율제조 Carbon Coating Manufacturing Platform 개발을 목표로 후보과제를 기획하고 있습니다.
+
+본 과제는 단순한 Carbon Coating 기술개발이 아니라,
+
+AI 기반 제조데이터(Data Lake) 구축
+Machine Learning 및 Digital Twin 기반 공정 최적화
+AI 기반 자율제조(Process Optimization & Process Transfer)
+연속식 Powder ALD 기반 Carbon Coating 제조공정
+50 kg/hr급 AI Factory 양산 Manufacturing Line 구축
+을 하나의 AI Factory 제조혁신 플랫폼으로 구현하는 것을 목표로 하고 있습니다.
+
+
+
+특히 AI가 제조공정을 스스로 학습하고 최적화하는 제조혁신 플랫폼을 구축하여, 차세대 이차전지 소재 제조산업 전반으로 확산 가능한 국가 제조 AI 표준모델을 제시하는 것을 과제의 핵심 목표로 설정하였습니다.
+
+
+
+참고자료로 당사가 검토한 Operio 플랫폼 기반 연속식 표면반응 개념도와 SiC 표면 Propylene 기반 Carbon Coating 연속식 반응기 설계안을 함께 첨부드립니다.
+
+
+
+아울러, POSTECH 안지환 교수님과 한국기계연구원 이승모 박사님, 가천대학교 채오병 교수님께도 본 메일을 함께 공유드리오니, 각 분야의 전문적인 관점에서 기획 방향과 기술적 정합성을 검토해 주시고, 보완이 필요한 사항에 대해 고견을 주시면 적극 반영하여 후보과제를 완성하고자 합니다.
+
+
+
+네 분의 의견을 종합하여 AI Factory 사업의 취지에 부합하는 보다 완성도 높은 기획안으로 발전시키고자 하오니, 바쁘시더라도 검토와 자문을 부탁드립니다.
+
+감사합니다.
+
+
+
+대성기계공업(주)
+이용남 배상
+
+
+
+첨부
+
+
+Operio 플랫폼 기반 연속식 표면반응 개념도
+SiC 표면 Propylene 기반 Carbon Coating 연속식 반응기 설계안
+AI Factory 후보과제 요약서(안) 
+
+
+
+
+
+
+DAESUNG_Primary Logo_337x61.jpg 
+
+R&D Center Managing Director / 상무 이용남    
+
+경기도 시흥시 공단1대로 334 (시화공단 3다 401호)
+
+334, Gongdan 1-daero, Siheung-si, Gyeonggi-do, Korea
+
+Tel : +82-31-496-5855     Fax : +82-31-499-7170
+
+Mobil : +82-10-5332-9267
+
+E-mail  :  ynlee63@dsv.co.kr
+
+Homepage : www.dsv.co.kr
+
+대성기계공업_이메일 배너_ver1.1_사이즈 변경-02.jpg
+
+ 
+
+대성기계공업_이메일 배너_ver1.1_사이즈 변경-01.jpg
+
+
+
+
+
+
+--
+Ohbyong Chae
+
+Assistant Professor / Ph.D.
+
+School of Chemical, Biological and Battery Engineering
+
+Gachon University 
+
+Tel: +82-31-750-8944
+
+E-mail: obchae@gachon.ac.kr
+
+Home page: https://sites.google.com/view/coblab/
