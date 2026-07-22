@@ -25,3 +25,9 @@ CV 내용중에, paper publication list와 특허 리스트를 업데이트 하�
 결과 화일은 워드문서로 만들어 주시고,  이전 버전을 그대로 둔체, 업데이트되 워드파일의 이름을 ."...v.X.0"형식으로 해주세요.
 
 
+아래 두편의 페이퍼가 최근에 accept이 되었어요. 아래 페이퍼리스트는 CV의 논문 목록에 넣어 주세요.
+CV 버전을 업데이트 해주시고,  파일은 워드 화일과 pdf화일로 각각 저장해 주세요.
+
+https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mdaQOF0AAAAJ&sortby=pubdate&citation_for_view=mdaQOF0AAAAJ:UHK10RUVsp4C
+
+https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mdaQOF0AAAAJ&sortby=pubdate&citation_for_view=mdaQOF0AAAAJ:JQOojiI6XY0C
