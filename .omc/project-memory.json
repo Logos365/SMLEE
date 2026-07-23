@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778214976235,
+  "lastScanned": 1783487905491,
   "projectRoot": "e:\\040_Git\\01_Gram",
   "techStack": {
     "languages": [],
@@ -35,21 +35,21 @@
     "000_Template": {
       "path": "000_Template",
       "purpose": null,
-      "fileCount": 7,
-      "lastAccessed": 1778214976171,
+      "fileCount": 8,
+      "lastAccessed": 1783487905427,
       "keyFiles": [
         "20260327_Template.md",
         "Daily_Note Template.md",
         "My Diary Template.md",
         "Template practice.md",
-        "기억해야 할 말들.md"
+        "Untitled.md"
       ]
     },
     "010_Diary": {
       "path": "010_Diary",
       "purpose": null,
       "fileCount": 8,
-      "lastAccessed": 1778214976172,
+      "lastAccessed": 1783487905428,
       "keyFiles": [
         "2026-03-09.md",
         "2026-03-12.md",
@@ -62,7 +62,7 @@
       "path": "020_AI Learning",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976173,
+      "lastAccessed": 1783487905429,
       "keyFiles": [
         "260119-2_obsidian_beginner_guide.pptx"
       ]
@@ -71,39 +71,40 @@
       "path": "030_Project",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1778214976174,
+      "lastAccessed": 1783487905430,
       "keyFiles": []
     },
-    "040_Areas": {
-      "path": "040_Areas",
+    "040_Publication": {
+      "path": "040_Publication",
       "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1778214976176,
+      "fileCount": 2,
+      "lastAccessed": 1783487905431,
       "keyFiles": [
-        "Readme.md"
+        "Readme.md",
+        "과제 사사.md"
       ]
     },
-    "050_Resources": {
-      "path": "050_Resources",
-      "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1778214976177,
-      "keyFiles": [
-        "Readme.md"
-      ]
-    },
-    "060_Research": {
-      "path": "060_Research",
+    "050_Patents": {
+      "path": "050_Patents",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1778214976179,
+      "lastAccessed": 1783487905432,
       "keyFiles": []
+    },
+    "060_Administration": {
+      "path": "060_Administration",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1783487905433,
+      "keyFiles": [
+        "Readme.md"
+      ]
     },
     "070_Lecture": {
       "path": "070_Lecture",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976180,
+      "lastAccessed": 1783487905434,
       "keyFiles": [
         "Readme.md"
       ]
@@ -112,24 +113,40 @@
       "path": "080_Supervision",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1778214976181,
+      "lastAccessed": 1783487905435,
       "keyFiles": []
     },
-    "090_Archive": {
-      "path": "090_Archive",
+    "090_Conference": {
+      "path": "090_Conference",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1783487905436,
+      "keyFiles": [
+        "Conference 정보.md"
+      ]
+    },
+    "100_Archive": {
+      "path": "100_Archive",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1778214976182,
+      "lastAccessed": 1783487905436,
       "keyFiles": [
         "00_Readme.md",
         "Getting started with OneDrive.pdf"
       ]
     },
+    "110_Review Service": {
+      "path": "110_Review Service",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1783487905437,
+      "keyFiles": []
+    },
     "Attached File": {
       "path": "Attached File",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976185,
+      "lastAccessed": 1783487905438,
       "keyFiles": [
         "Pasted image 20260124154039.png"
       ]
@@ -138,7 +155,7 @@
       "path": "attachments",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976186,
+      "lastAccessed": 1783487905439,
       "keyFiles": [
         "미래소재디스커버리_연구기획_보고서.docx"
       ]
@@ -147,7 +164,7 @@
       "path": "TaskNotes",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976187,
+      "lastAccessed": 1783487905440,
       "keyFiles": [
         "설정관련 안내 pdf.md"
       ]
@@ -156,7 +173,7 @@
       "path": "_types",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1778214976189,
+      "lastAccessed": 1783487905441,
       "keyFiles": [
         "task.md"
       ]
@@ -165,7 +182,7 @@
       "path": "TaskNotes\\Views",
       "purpose": "View templates",
       "fileCount": 6,
-      "lastAccessed": 1778214976202,
+      "lastAccessed": 1783487905451,
       "keyFiles": [
         "agenda-default.base",
         "calendar-default.base",
@@ -173,6 +190,217 @@
       ]
     }
   },
-  "hotPaths": [],
+  "hotPaths": [
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\make_frames.py",
+      "accessCount": 4,
+      "lastAccessed": 1783501290543,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\언론홍보 프롬프트.md",
+      "accessCount": 2,
+      "lastAccessed": 1783495008894,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\fig6_F.png",
+      "accessCount": 2,
+      "lastAccessed": 1783495158680,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\shorts_beforeafter_labeled.png",
+      "accessCount": 2,
+      "lastAccessed": 1783499655114,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\(연구성과 보도자료 초안 샘플) 신재생에너지 기반 온실 3중 열병합발전 시스템 개발.pdf",
+      "accessCount": 1,
+      "lastAccessed": 1783490556291,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\Clean_Revised_Manuscript_R2.pdf",
+      "accessCount": 1,
+      "lastAccessed": 1783490564896,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\ACS Energy Lett_ultrathin-yet.pdf",
+      "accessCount": 1,
+      "lastAccessed": 1783490588946,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image1.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490658243,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image2.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490658696,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image3.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490658995,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image4.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490659159,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image5.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490682791,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image6.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490683022,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\manuscript\\image7.png",
+      "accessCount": 1,
+      "lastAccessed": 1783490683218,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\white_bg\\image5.png",
+      "accessCount": 1,
+      "lastAccessed": 1783492744836,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\white_bg\\image4.png",
+      "accessCount": 1,
+      "lastAccessed": 1783492744873,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\fig2_top.png",
+      "accessCount": 1,
+      "lastAccessed": 1783492849599,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\fig4_bottom.png",
+      "accessCount": 1,
+      "lastAccessed": 1783492849953,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\fig6_bottomEF.png",
+      "accessCount": 1,
+      "lastAccessed": 1783492850370,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\E--040-Git-01-Gram-040-Publication-045------------\\a7d353aa-7528-486e-9498-ade4daa8b900\\scratchpad\\convert_docx.py",
+      "accessCount": 1,
+      "lastAccessed": 1783495302001,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\Clean_Revised_Manuscript_R2.md",
+      "accessCount": 1,
+      "lastAccessed": 1783495396303,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\E--040-Git-01-Gram-040-Publication-045------------\\a7d353aa-7528-486e-9498-ade4daa8b900\\scratchpad\\convert_supporting.py",
+      "accessCount": 1,
+      "lastAccessed": 1783495480355,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\Clean_Revised_Supporting_Information_R2.md",
+      "accessCount": 1,
+      "lastAccessed": 1783495534371,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\fig5_timeline.png",
+      "accessCount": 1,
+      "lastAccessed": 1783496148846,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\E--040-Git-01-Gram-040-Publication-045------------\\a7d353aa-7528-486e-9498-ade4daa8b900\\scratchpad\\convert_pdf.py",
+      "accessCount": 1,
+      "lastAccessed": 1783496370994,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\ACS_Energy_Lett_ultrathin-yet.md",
+      "accessCount": 1,
+      "lastAccessed": 1783496639819,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\Advanced_Science_Taming_Lithium_Nucleation.md",
+      "accessCount": 1,
+      "lastAccessed": 1783496640261,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\docx_dump.txt",
+      "accessCount": 1,
+      "lastAccessed": 1783499447301,
+      "type": "file"
+    },
+    {
+      "path": "040_Publication\\045_언론보도_나트륨 전지\\extracted_media\\crops\\shorts_beforeafter.png",
+      "accessCount": 1,
+      "lastAccessed": 1783499526476,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00050.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501260292,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00150.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501261124,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00280.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501261835,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00450.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501262586,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00550.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501263285,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\KIMM\\AppData\\Local\\Temp\\claude\\e--040-Git-01-Gram-040-Publication-045------------\\93062676-35bf-4692-b73c-a3d22fcb7947\\scratchpad\\frames\\f_00650.png",
+      "accessCount": 1,
+      "lastAccessed": 1783501263878,
+      "type": "file"
+    }
+  ],
   "userDirectives": []
 }
