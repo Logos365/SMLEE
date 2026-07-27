@@ -29,7 +29,7 @@ Uyen Nhat Trieu Nguyen<sup>a,b</sup>, Dao Thi Dung <sup>a,b</sup>, <span class="
 
 **TOC Graphic and Summary**
 
-<img src="./images/media/image1.png" style="width:6.5in;height:4.25764in" />
+![](./images/media/image1.png)
 
 “Intrinsic graphitic–defect hybrid architecture synergistically couples broadband solar absorption with efficient photothermal conversion for high-performance solar vapor generation.”
 
@@ -73,27 +73,15 @@ The solar vapor generation performance was evaluated under simulated one-sun ill
 
 The net evaporation rate m<sub>0</sub> was calculated by subtracting the evaporation rate measured in the dark from that obtained under one-sun illumination (Equation 1).
 
-|                                   
- ``` math                           
- m_{0} = \ m_{1\ sun} - \ m_{dark}  
- ```                                | (Equation 1) |
-|-----------------------------------|--------------|
+$$m_{0} = \ m_{1\ sun} - \ m_{dark} \tag{1}$$
 
 The solar-to-vapor conversion efficiency (η) was calculated according to Equation 2.
 
-|                                          
- ``` math                                  
- \eta = \ \frac{m_{0}(h_{v} + Q)}{P_{in}}  
- ```                                       | (Equation 2) |
-|------------------------------------------|--------------|
+$$\eta = \ \frac{m_{0}(h_{v} + Q)}{P_{in}} \tag{2}$$
 
 where ​m<sub>0</sub> is the net evaporation rate, h<sub>v</sub> is the latent heat of vaporization of water, Q is the sensible heat required to raise the water temperature, and P<sub>in</sub> is the incident solar energy density (3600 kJ m⁻² h⁻¹ under one-sun illumination). Since the temperature rise during evaporation was negligible, Q was assumed to be zero. The latent heat of vaporization was calculated by Equation 3.
 
-|                                                          
- ``` math                                                  
- h_{v} = 1.91846 \times 10^{6}(\frac{T}{T - 33.91}\ )^{2}  
- ```                                                       | (Equation 3) |
-|----------------------------------------------------------|--------------|
+$$h_{v} = 1.91846 \times 10^{6}(\frac{T}{T - 33.91}\ )^{2} \tag{3}$$
 
 where T is the absolute temperature (K). At 293 K, h<sub>v</sub> was calculated to be 2.49 kJ g⁻¹.
 
@@ -257,19 +245,21 @@ The authors declare no conflict of interest.
 
 \[35\] Zhu, L., Gao, M., Peh, C. K. N., & Ho, G. W. (2018). Solar-driven photothermal nanostructured materials designs and prerequisites for evaporation and catalysis applications. *Materials Horizons*, *5*, 323-343.
 
-**Figures**<img src="./images/media/image2.png" style="width:6.5in;height:4.96736in" />
+**Figures**
+
+![](./images/media/image2.png)
 
 **Figure 1. a)** Formation and intrinsic graphitic–defect hybrid architecture of methane-pyrolysis-derived turbostratic carbon; **b)** Fabrication of turbostratic carbon-coated melamine foam for solar vapor generation.
 
-<img src="./images/media/image3.png" style="width:6.5in;height:5.8875in" />
+![](./images/media/image3.png)
 
 **Figure 2.** Morphology and structural characterization of turbostratic carbon. **a)** SEM images of aggregated solid carbon morphology; **b)** HRTEM and FFT analyses revealing graphitic microdomains embedded within a defect-rich turbostratic carbon framework; **c)** HAADF-STEM and elemental mapping results of C and O distributions; **d)** XPS survey spectrum; **e)** Raman spectrum; **f)** Thermal conductivity behavior.
 
-<img src="./images/media/image4.png" style="width:6.5in;height:5.7375in" />
+![](./images/media/image4.png)
 
 **Figure 3.** Construction and interfacial characterization of TC/MF. **a)** XRD patterns of TC, pristine MF, and TC/MF; **b)** SEM images showing uniform coating of TC on the porous MF skeleton; **c)** HAADF-STEM image and corresponding elemental mapping of C, N, and O for TC/MF; **d)** Wettability comparison of pristine TC, pristine MF, and TC/MF, together with time-resolved water droplet absorption images.
 
-<img src="./images/media/image5.png" style="width:6.5in;height:4.33472in" />
+![](./images/media/image5.png)
 
 **Figure 4.** Photothermal conversion and SVG performance of turbostratic carbon under one sun irradiation. **a)** Surface temperature profiles and corresponding infrared thermal images under dry-state and wet-state; **b)** UV–Vis–NIR absorption spectra of MF, TC, and TC/MF; **c)** Mass change of water as a function of time for bulk water, MF, and TC/MF.
 
@@ -280,7 +270,7 @@ The authors declare no conflict of interest.
 
 **\**
 
-<img src="./images/media/image6.png" style="width:6.5in;height:5.23681in" />
+![](./images/media/image6.png)
 
 **Figure 6.** Practical outdoor solar desalination performance of the TC/MF evaporator. **a)** Schematic illustration and **b)** photographs of the salt-rejection behavior during continuous desalination; **c)** Outdoor solar desalination performance under natural sunlight showing solar irradiance and cumulative water mass change; **d)** Concentrations of major ions (Na⁺, Mg²⁺, K⁺, and Ca²⁺) before and after desalination determined by ICP-AES.
 
@@ -317,27 +307,27 @@ Uyen Nhat Trieu Nguyen<sup>a,b</sup>, Dao Thi Dung <sup>a,b</sup>, <span class="
 > \* Corresponding author: Seung-Mo Lee (<sm.lee@kimm.re.kr>)
 
 **\**
-<img src="./images/media/image7.png" style="width:6in;height:6.64236in" />
+![](./images/media/image7.png)
 
 **Figure S1.** Schematic illustration of the rotating gliding arc (RGA) plasma system for methane pyrolysis and turbostratic carbon synthesis. **a)** Experimental setup of the atmospheric-pressure RGA plasma reactor, including the CH₄/H₂ gas supply, AC power source, oscilloscope, plasma reactor, carbon collection filter, and downstream characterization process; **b)** Schematic illustration of the RGA plasma reactor showing the water-cooled high-voltage electrode, gliding arc discharge, methane decomposition region, and continuous formation of turbostratic carbon (TC) during methane pyrolysis.
 
-<img src="./images/media/image8.png" style="width:6.5in;height:2.71389in" />
+![](./images/media/image8.png)
 
 **Figure S2.** High-resolution XPS spectra of methane-derived turbostratic carbon. **a)** C 1s spectrum deconvoluted into sp² C=C/C–C and oxygen-containing carbon species. **b)** O 1s spectrum showing oxygen species originating from slight surface oxidation.
 
-<img src="./images/media/image9.png" style="width:4.72121in;height:3.62121in" />
+![](./images/media/image9.png)
 
 **Figure S3.** FTIR spectrum of methane-derived turbostratic carbon. FTIR spectrum showing characteristic C–H, C=O, and C–O vibrational bands, indicating limited surface oxygen functionalities.
 
-<img src="./images/media/image10.png" style="width:6.5in;height:2.55208in" />
+![](./images/media/image10.png)
 
 **Figure S4.** XRD characterization of methane-derived turbostratic carbon. **a)** Deconvolution of the broad diffraction peak centered at approximately 25.8°, corresponding to the graphitic (002) plane; **b)** Deconvolution of the broad diffraction feature around 43–45°, assigned to the (100) and (101) reflections of turbostratic carbon.
 
-<img src="./images/media/image11.png" style="width:6.5in;height:2.64861in" />
+![](./images/media/image11.png)
 
 **Figure S5.** Textural properties of methane-derived turbostratic carbon. **a)** N₂ adsorption–desorption isotherms; **b)** BJH pore-size distribution curve.
 
-<img src="./images/media/image12.png" style="width:6.29697in;height:4.40606in" />
+![](./images/media/image12.png)
 
 **Figure S6.** Raman analysis of interfacial water structure. Deconvoluted O–H stretching Raman spectra of pure water and water in contact with methane-derived turbostratic carbon (Water/TC), showing the free-water (FW), intermediate-water (IW), and other hydrogen-bonded water components.
 
