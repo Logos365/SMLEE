@@ -4,6 +4,9 @@ getdesign md
 
 : [https://getdesign.md/](https://www.youtube.com/redirect?event=video_description&redir_token=QUM4Zm9rUmVFdGZvZnU2S2F6Uk43bXE4VThGb3xBR3JiS2FtU0lyYlFZWFp6cnR0UjVBWmk1NUY2OGhNdHhtUjNHR1pqbi1aU2VlbUtIb1dDM29paUNqWlJ3WjBhd0FWOUdLV1lWcGdYM0tibEg4akp6aGFlVEYzRE55VGs1OEt6&q=https%3A%2F%2Fgetdesign.md%2F&v=eMms4eiiL1s)
 
+젠스파크
+https://www.youtube.com/watch?v=eMms4eiiL1s
+
 
 https://www.youtube.com/watch?v=eMms4eiiL1s
 
