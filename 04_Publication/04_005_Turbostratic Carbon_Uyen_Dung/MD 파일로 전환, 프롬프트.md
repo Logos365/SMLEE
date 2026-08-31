@@ -37,4 +37,8 @@ Manuscipt_Turbostratic Carbon_Ver3_revised.docx 화일을 md 화일로 바꾸어
 13. 위의 내용을, md화일로 정리 및 저장 해 주세요.
 14. 검토의견_v1.md, 개요_v1.md, 논문초안_v1.md 로 각각 저장해 주세요.
 15. Once sentence summary는 Abstract 전장에 넣어 주세요. TOC 그래픽 박스와 함께.
-16. 
+
+
+--- 
+ 본 연구에서 DFT를 넣지 못할것 같습니다. 데이터를 준비하지 못했어요. 각 md화일을 업데이트 해주세요
+ 화일을 덮어 쓰지 말고, v2로 각각 만들어주세요.
