@@ -59,3 +59,9 @@ Manuscipt_Turbostratic Carbon_Ver3_revised.docx 화일을 md 화일로 바꾸어
 2. 캡션에  "->(화살표)", ":", ";" ,"-" 등을 사용하지 말아 주세요.
 3. 내용을 조금 쉽게 작성해 주세요. 
 4. 논문 초안에도 동일하게,  "->(화살표)", ":", ";" ,"-" 등을 사용하지 말아 주세요.
+
+----
+1. Figure caption에서 "panel" 이라는 단어를 모두 빼주세요. 
+2. Figure caption의 길이를 더 줄여주세요.
+3. 현재 논문의 main text 길이가 너무 짧은듯 합니다. abstract, reference, figure caption, table caption을 제외하고,약 2500-3000자 정도로 맞춰주세요. 
+4. Reference에는 논문 title도 같이 넣어 주세요. 현재는 논문의 제목이 빠져 있는듯 합니다.
