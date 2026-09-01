@@ -51,3 +51,11 @@ Manuscipt_Turbostratic Carbon_Ver3_revised.docx 화일을 md 화일로 바꾸어
 1. 지금까지 작성해준 논문초안은, Manuscipt_Turbostratic Carbon_Ver5_revised.pdf의 본문을 기준으로 작성을 해준것 같군요.
 2. Figures_Table_SI.pdf 에 FIgures 1-5와 supporting figures, table 등이 있어요.  이 그림 및 테이블의 캡션을 작성해 주세요.
 3.  논문 초안을 위의 Figures_Table_SI.pdf 에 나와 있는 그림 및 테이블을 참조해서, 다시 작성해 주세요.  
+
+
+---
+지금 작성을 해준 figure caption 들이 상대적으로너무 긴것 같아 보입니다. 
+1. figure caption 을 길이 를  살짝  줄여 주세요.
+2. 캡션에  "->(화살표)", ":", ";" ,"-" 등을 사용하지 말아 주세요.
+3. 내용을 조금 쉽게 작성해 주세요. 
+4. 논문 초안에도 동일하게,  "->(화살표)", ":", ";" ,"-" 등을 사용하지 말아 주세요.
