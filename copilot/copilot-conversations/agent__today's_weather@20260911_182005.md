@@ -18,5 +18,5 @@ tags:
 **user**: 대전, 그리고 내일 날씨도
 [Timestamp: 2026/09/11 18:20:43]
 
-**ai**: 
+**ai**: **Error:** Claude Code process exited with code 1073807364
 [Timestamp: 2026/09/11 18:20:43]
