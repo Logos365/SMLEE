@@ -5,7 +5,6 @@
   "markdown-table-editor",
   "table-editor-obsidian",
   "automatic-table-of-contents",
-  "google-calendar",
   "homepage",
   "tasknotes",
   "obsidian-icon-folder",
@@ -19,5 +18,7 @@
   "obsidian-advanced-slides",
   "kr-book-info-plugin",
   "korean-book-search",
-  "better-export-pdf"
+  "better-export-pdf",
+  "obsidian-custom-frames",
+  "obsidian-google-lookup"
 ]
