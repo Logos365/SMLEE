@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>클로드 vs 클로드 코드 — 그리고 뭘 할 수 있나</title>
+<style>
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.min.css");
+  :root{
+    --bg:#f5f7fa; --panel:#ffffff; --panel2:#eef1f6; --ink:#1b2430; --muted:#5a6877;
+    --line:#dde3ec; --accent:#3b5bdb; --green:#0f9d63; --pink:#d6336c; --amber:#c77f0a; --purple:#7c4fd0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);font-family:"Pretendard","Segoe UI","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  body{zoom:1.3} /* 빔 프로젝터용 — 발표 환경에 맞게 1.1~1.4로 조절 */
+  .wrap{max-width:1180px;margin:0 auto;padding:34px 24px 70px}
+  header{text-align:center;margin-bottom:30px}
+  .kicker{display:inline-block;font-size:13px;letter-spacing:2px;color:var(--accent);font-weight:700;text-transform:uppercase;margin-bottom:14px;border:1px solid var(--line);padding:5px 14px;border-radius:999px}
+  h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:-0.5px}
+  h1 .hl{background:linear-gradient(120deg,#3b5bdb,#0f9d63);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin-top:13px;color:var(--muted);font-size:16px;line-height:1.6}
+  h2.sec{font-size:15px;letter-spacing:1px;color:var(--accent);font-weight:800;text-transform:uppercase;margin:42px 0 16px;display:flex;align-items:center;gap:10px}
+  h2.sec::before{content:"";width:6px;height:20px;background:linear-gradient(180deg,#7c9cff,#43c59e);border-radius:3px;display:inline-block}
+
+  /* 비유 두 카드 */
+  .vs{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch}
+  .vsCard{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 22px}
+  .vsCard.chat{border-top:3px solid var(--amber)}
+  .vsCard.code{border-top:3px solid var(--green)}
+  .vsCard .badge{font-size:12px;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:999px;display:inline-block;margin-bottom:10px}
+  .vsCard.chat .badge{background:rgba(255,212,121,.15);color:var(--amber)}
+  .vsCard.code .badge{background:rgba(67,197,158,.15);color:var(--green)}
+  .vsCard h3{font-size:20px;font-weight:800;margin-bottom:4px}
+  .vsCard .meta{color:var(--muted);font-size:13.5px;margin-bottom:14px}
+  .vsCard .analogy{font-size:15px;line-height:1.5;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:#2a3744}
+  .vsMid{display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:800;font-size:18px}
+
+  /* 비교표 */
+  .cmp{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:13px 16px;text-align:left;font-size:14.5px;border-bottom:1px solid var(--line)}
+  thead th{background:var(--panel2);font-size:13px;color:var(--muted);font-weight:700}
+  thead th:nth-child(2){color:var(--amber)} thead th:nth-child(3){color:var(--green)}
+  tbody tr:last-child td{border-bottom:none}
+  td:first-child{color:var(--muted);font-weight:600;width:140px}
+  td.code{color:#2a3744}
+
+  /* 활용 카탈로그 */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px 20px;cursor:pointer;position:relative;transition:transform .12s ease,border-color .12s ease}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .card .clickHint{position:absolute;top:14px;right:15px;font-size:11px;color:var(--accent);font-weight:700;opacity:.8}
+  .card .top{display:flex;align-items:center;gap:11px;margin-bottom:6px}
+  .card .ico{font-size:24px}
+  .card h3{font-size:18px;font-weight:800}
+  .card .desc{color:var(--muted);font-size:13.5px;line-height:1.5;margin-bottom:14px}
+  .ex{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:10px 13px;margin-top:9px;font-size:14px;line-height:1.55;color:#2a3744}
+  .ex::before{content:"💬 ";opacity:.8}
+  .ex em{color:var(--muted);font-style:normal}
+
+  .punch{margin-top:36px;text-align:center;background:radial-gradient(120% 120% at 50% 0%,rgba(124,156,255,.12),transparent 62%);border:1px solid var(--line);border-radius:18px;padding:28px 26px}
+  .punch .big{font-size:22px;font-weight:800;line-height:1.5}
+  .punch .big .u{border-bottom:3px solid var(--accent);padding-bottom:1px}
+  .punch .small{margin-top:12px;color:var(--muted);font-size:15px;line-height:1.6}
+  footer{text-align:center;color:#5d6b7e;font-size:12.5px;margin-top:30px;line-height:1.7}
+  /* 모달 */
+  .modalBg{position:fixed;inset:0;background:rgba(6,9,14,.82);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:50;padding:24px}
+  .modalBg.on{display:flex}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:18px;max-width:880px;width:100%;max-height:88vh;overflow:auto;padding:24px 26px;position:relative}
+  .modal .x{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:17px;cursor:pointer;line-height:1}
+  .modal h3{font-size:22px;font-weight:800;margin:2px 40px 14px 0}
+  .modal .pBubble{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;margin-bottom:9px;font-size:14.5px;color:#2a3744}
+  .modal .pBubble::before{content:"💬 ";opacity:.8}
+  .modal .resLabel{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--green);margin:18px 0 10px}
+  .modal img.res{width:100%;border-radius:12px;border:1px solid var(--line);display:block;background:#fff}
+  .modal .cap{margin-top:9px;color:var(--muted);font-size:12.5px;text-align:center}
+  .mock{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mockCol{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-size:13px;line-height:1.6}
+  .mockCol .h{font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:8px}
+  .mockCol.before .h{color:var(--pink)} .mockCol.after .h{color:var(--green)}
+  .mockCol code{display:block;color:#1f3a7a;font-family:ui-monospace,monospace;font-size:12px;white-space:pre-wrap}
+  .mockCol .ln{color:#2a3744}
+  .modal hr.exDiv{border:none;border-top:1px dashed var(--line);margin:24px 0}
+  .modal .exNo{display:inline-block;font-size:11px;font-weight:800;color:var(--accent);background:rgba(124,156,255,.12);padding:3px 9px;border-radius:6px;margin-bottom:8px}
+  .miniTable{width:100%;border-collapse:collapse;font-size:11.5px;margin-top:2px}
+  .miniTable th,.miniTable td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+  .miniTable th{background:var(--panel2);color:var(--muted);font-weight:700}
+  .miniTable tr.me td{background:rgba(67,197,158,.12);color:#2a3744;font-weight:700}
+  /* 왜 로컬인가 */
+  .analogyBox{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+  .analogyBox > div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:15.5px;line-height:1.55}
+  .analogyBox .cloud{border-left:4px solid var(--muted)}
+  .analogyBox .local{border-left:4px solid var(--accent)}
+  .whyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .whyCard{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+  .whyCard .ic{font-size:27px;margin-bottom:8px}
+  .whyCard h4{font-size:17px;font-weight:800;margin-bottom:7px}
+  .whyCard p{font-size:14px;line-height:1.55}
+  .whyCard .eg{margin-top:10px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+  /* 발표용 포커스 — 카드에 커서 올리면 그것만 확대·선명, 나머지는 흐리게 */
+  .grid > .card{transition:transform .12s ease, border-color .12s ease}
+  /* 확대 시 화면 밖으로 안 짤리게 — 가장자리 카드는 안쪽(중앙)으로 확대 */
+  .grid > .card:nth-child(2n+1){transform-origin:left center}
+  .grid > .card:nth-child(2n){transform-origin:right center}
+  .whyGrid > .whyCard:nth-child(3n+1){transform-origin:left center}
+  .whyGrid > .whyCard:nth-child(3n){transform-origin:right center}
+  @media (max-width:820px){ h1{font-size:25px} .vs{grid-template-columns:1fr} .vsMid{padding:6px} .grid{grid-template-columns:1fr} td:first-child{width:auto} .mock{grid-template-columns:1fr} .analogyBox{grid-template-columns:1fr} .whyGrid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<a href="index.html" style="position:fixed;top:14px;left:14px;z-index:60;background:#ffffff;border:1px solid #dde3ec;color:#1b2430;padding:8px 15px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.08)">⌂ 목차</a>
+<a href="landscape.html" style="position:fixed;bottom:16px;left:14px;z-index:60;background:#ffffff;border:1px solid #dde3ec;color:#1b2430;padding:9px 17px;border-radius:999px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.08)">‹ 이전</a>
+<a href="cases.html" style="position:fixed;bottom:16px;right:14px;z-index:60;background:#3b5bdb;border:1px solid #3b5bdb;color:#ffffff;padding:9px 17px;border-radius:999px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 2px 8px rgba(59,91,219,.3)">다음 ›</a>
+<script>document.addEventListener('keydown',function(e){var t=e.target.tagName;if(t==='INPUT'||t==='TEXTAREA')return;if(e.key==='ArrowRight'){location.href='cases.html';}if(e.key==='ArrowLeft'){location.href='landscape.html';}});</script>
+<div class="wrap">
+  <header>
+    <span class="kicker">클로드 코드로 할 수 있는 일</span>
+    <h1><span style="display:inline-block;background:linear-gradient(135deg,#5b8def,#43c59e);color:#fff;font-size:.55em;font-weight:800;width:1.6em;height:1.6em;line-height:1.6em;text-align:center;border-radius:8px;vertical-align:middle;margin-right:.5em">4</span>이렇게 <span class="hl">말하면</span> 됩니다</h1>
+    <p class="sub">카드를 클릭하면 실제 예시 결과가 열려요. 전부 그냥 평소 말투예요.</p>
+  </header>
+
+  <!-- 활용 카탈로그 -->
+  <h2 class="sec">클로드 코드로 할 수 있는 일 — 이렇게 말하면 됩니다</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="top"><span class="ico">📁</span><h3>폴더·파일 정리</h3></div>
+      <div class="desc">어수선한 폴더, 이미지 수백 장 — 말 한마디로 정리.</div>
+      <div class="ex">이 폴더 어수선한데 <em>날짜_실험명</em> 형식으로 이름 바꾸고 정리해줘</div>
+      <div class="ex">측정 이미지 수백 장을 조건별 폴더로 분류해줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">📊</span><h3>데이터 정리·분석</h3></div>
+      <div class="desc">엑셀·csv를 읽어서 합치고, 통계 내고, 정리.</div>
+      <div class="ex">이 엑셀들 합쳐서 조건별 평균이랑 표준편차 내줘</div>
+      <div class="ex">센서 데이터(csv) 사이클별로 나눠서 색 다르게 그래프로 그려줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">📈</span><h3>그래프·시각화</h3></div>
+      <div class="desc">데이터를 논문용 그림으로 바로.</div>
+      <div class="ex">이 csv로 응력-변형 곡선 그려줘, 논문용으로 깔끔하게</div>
+      <div class="ex">여러 조건 비교하는 막대그래프랑 radar 차트 만들어줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">📝</span><h3>문서·글쓰기</h3></div>
+      <div class="desc">막 적은 메모 → 정제된 연구노트·보고서.</div>
+      <div class="ex">세미나 들으며 막 적은 이 메모, 깔끔한 연구노트로 정리해줘</div>
+      <div class="ex">이 계획서 읽고 연차별 정량 목표랑 to-do로 뽑아줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">🐍</span><h3>코드·자동화</h3></div>
+      <div class="desc">반복 작업을 스크립트로, 시뮬레이터까지.</div>
+      <div class="ex">매번 손으로 하던 측정 데이터 전처리, 파이썬으로 자동화해줘</div>
+      <div class="ex">이런 시뮬레이터 만들고 싶은데 같이 설계하자</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">📚</span><h3>논문·자료 관리</h3></div>
+      <div class="desc">논문 여러 편을 읽고 비교표로, 포지셔닝 분석까지.</div>
+      <div class="ex">이 PDF 논문 11편 읽고 핵심 방법이랑 수치를 비교표로 정리해줘</div>
+      <div class="ex">내 연구를 이 논문들 사이에서 어떻게 포지셔닝할지 분석해줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">💡</span><h3>학습·이해</h3></div>
+      <div class="desc">모르는 코드·개념을 내 눈높이로 설명.</div>
+      <div class="ex">이 코드 뭐 하는 건지 한국어로 설명해줘</div>
+      <div class="ex">이 개념, 연구 초보한테 설명하듯 알려줘</div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="ico">🎤</span><h3>발표·보고 자료</h3></div>
+      <div class="desc">슬라이드 구성, 한 장 요약 HTML까지.</div>
+      <div class="ex">이 내용으로 발표 슬라이드 구성 잡아줘</div>
+      <div class="ex">결과를 한 장 요약 HTML로 만들어줘 <em>(← 지금 이 자료처럼!)</em></div>
+    </div>
+
+  </div>
+
+  <div class="punch">
+    <div class="big">Chat은 <span class="u">'물어보는 곳'</span>, 클로드 코드는 <span class="u">'같이 일하는 곳'</span>.<br>연구자에겐 — 폴더가 있는 쪽이 압도적으로 강합니다.</div>
+    <div class="small">예시 프롬프트, 하나도 안 어렵죠? 전부 그냥 평소 말투예요.<br>외울 명령어는 없습니다. 하고 싶은 걸 말하면 됩니다.</div>
+  </div>
+
+  <footer>
+    KIMM 원내 공유 (2026) · 클로드 코드 활용 · capabilities.html<br>
+    카드를 클릭하면 실제 예시 결과가 열립니다.
+  </footer>
+</div>
+
+<div class="modalBg" id="modalBg">
+  <div class="modal">
+    <button class="x" id="closeX" aria-label="닫기">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const EX = [
+  {title:"📁 폴더·파일 정리", examples:[
+    {prompt:"이 폴더 어수선한데 날짜_실험명 형식으로 이름 바꾸고 정리해줘",
+     result:{type:"mockup", html:`<div class="mock"><div class="mockCol before"><div class="h">Before · 엉망</div><code>IMG_0421.jpg
+스캔(1).csv
+새 폴더
+final_FINAL_v2.xlsx</code></div><div class="mockCol after"><div class="h">After · 정리</div><code>2026-04-21_clover/
+  raw/  scan.csv
+  img/  sample.png</code></div></div>`}},
+    {prompt:"측정 이미지 수백 장을 조건별 폴더로 분류해줘",
+     result:{type:"mockup", html:`<div class="mock"><div class="mockCol before"><div class="h">Before</div><code>사진 312장이
+한 폴더에 뒤섞임</code></div><div class="mockCol after"><div class="h">After</div><code>0pct/  5pct/  10pct/
+45deg/ 90deg/
+→ 조건별 자동 분류</code></div></div>`}}
+  ]},
+
+  {title:"📊 데이터 정리·분석", examples:[
+    {prompt:"이 엑셀들 합쳐서 조건별 평균이랑 표준편차 내줘",
+     result:{type:"mockup", html:`<table class="miniTable"><tr><th>조건</th><th>평균 ΔR</th><th>표준편차</th><th>n</th></tr><tr><td>0°·5%</td><td>0.21</td><td>0.03</td><td>24</td></tr><tr><td>45°·10%</td><td>0.48</td><td>0.05</td><td>24</td></tr><tr><td>90°·15%</td><td>0.72</td><td>0.06</td><td>24</td></tr></table>`}},
+    {prompt:"센서 데이터(csv) 사이클별로 나눠서 색 다르게 그래프로 그려줘",
+     result:{type:"image", src:"assets/ex_data.png", cap:"raw 신호를 중심정렬→사이클 분할(색 구분)까지 한 번에 (실제 산출물)"}}
+  ]},
+
+  {title:"📈 그래프·시각화", examples:[
+    {prompt:"이 csv로 분류 결과 혼동행렬 그려줘, 논문용으로 깔끔하게",
+     result:{type:"image", src:"assets/ex_graph.png", cap:"분류 혼동행렬 — 데이터만 주고 말로 요청 (실제 산출물)"}},
+    {prompt:"여러 조건(도형)별 신호를 겹쳐서 비교 그래프 만들어줘",
+     result:{type:"image", src:"assets/ex_graph2.png", cap:"도형별 신호 오버레이 비교 (실제 산출물)"}}
+  ]},
+
+  {title:"📝 문서·글쓰기", examples:[
+    {prompt:"세미나 들으며 막 적은 이 메모, 깔끔한 연구노트로 정리해줘",
+     result:{type:"mockup", html:`<div class="mock"><div class="mockCol before"><div class="h">Before · 막 쓴 메모</div><div class="ln">"EMG raw인지 정류인지... +- 왔다갔다... 정규화하면 차이 사라짐... AI는 대신이 아니라 설명가능..."</div></div><div class="mockCol after"><div class="h">After · 정제 연구노트</div><div class="ln">1. Raw EMG 해석(MAV·RMS)<br>2. 정규화의 함정<br>3. 추천 feature 목록<br>4. 교육 도구 순서</div></div></div>`}},
+    {prompt:"이 계획서 읽고 연차별 정량 목표랑 to-do로 뽑아줘",
+     result:{type:"mockup", html:`<table class="miniTable"><tr><th>연차</th><th>정량 목표</th></tr><tr><td>1차년</td><td>선폭·곡면직경·수율 등 정량목표 + 특허</td></tr><tr><td>2차년</td><td>성능 고도화 · 안정화 + 논문</td></tr></table>`}}
+  ]},
+
+  {title:"🐍 코드·자동화", examples:[
+    {prompt:"매번 손으로 하던 측정 데이터 전처리, 파이썬으로 자동화해줘",
+     result:{type:"mockup", html:`<div class="mockCol"><div class="h">자동 생성된 스크립트</div><code>for f in glob("raw/*.csv"):
+    df = load(f)
+    df = remove_outliers(df)
+    cycles = segment(df)   # 사이클 자동 분할
+    save(f"processed/{f}", cycles)</code></div>`}},
+    {prompt:"이런 시뮬레이터 만들고 싶은데 같이 설계하자",
+     result:{type:"image", src:"assets/ex_simulator.png", cap:"오래 끙끙대던 곡면 프린팅 시뮬레이터 — Claude와 며칠 만에 (실제 산출물)"}}
+  ]},
+
+  {title:"📚 논문·자료 관리", examples:[
+    {prompt:"이 PDF 논문 11편 읽고 핵심 방법이랑 수치를 비교표로 정리해줘",
+     result:{type:"mockup", html:`<table class="miniTable">
+       <tr><th>논문</th><th>센서</th><th>분류</th><th>split</th><th>분류기</th><th>정확도</th></tr>
+       <tr><td>Qiu 2023</td><td>프린티드 LM-SiO₂</td><td>5</td><td>단일 random</td><td>1 (CNN)</td><td>90.5%</td></tr>
+       <tr><td>Zhang/Lai 2025</td><td>LM 14채널</td><td>10</td><td>random+5fold</td><td>5 classical</td><td>100%(14ch)</td></tr>
+       <tr><td>Xu 2025</td><td>신축 strain</td><td>360°</td><td>random</td><td>1 (Siamese)</td><td>99.58%</td></tr>
+       <tr><td>Hannigan 2021</td><td>섬유 3모달</td><td>회귀</td><td>random</td><td>多 회귀</td><td>RMSE</td></tr>
+       <tr class="me"><td>This work</td><td>프린터블 LM</td><td>3·6·12</td><td>3 splits(LOFO)</td><td>7</td><td>R3 99.0%</td></tr>
+     </table><div class="cap">11편 비교표 일부 — 실제 산출물 (docs/prior_work_analysis.md)</div>`}},
+    {prompt:"내 연구를 이 논문들 사이에서 어떻게 포지셔닝할지 분석해줘",
+     result:{type:"mockup", html:`<div class="ln"><b style="color:var(--green)">앞서는 2축 (여기로 프레이밍):</b><br>① 3 splits × 7 classifiers × 3 regimes — 11편 중 이 조합 <b>없음</b><br>② 물리 기반 전처리(polarity rule + viscoelastic) — 11편 중 <b>0편</b><br><br><b style="color:var(--pink)">양보할 축 (인정):</b><br>· 피험자 다양성 below median<br><br><span style="color:var(--muted);font-size:12px">→ "기록 경신"이 아니라 "검증 깊이"로 승부하라는 분석까지</span></div>`}}
+  ]},
+
+  {title:"💡 학습·이해", examples:[
+    {prompt:"이 train_classifier.py 뭐 하는 건지 한 줄씩 설명해줘",
+     result:{type:"mockup", html:`<div class="mockCol"><div class="h">설명</div><div class="ln">① 데이터 로드 → ② 사이클 분할 → ③ feature 추출 → ④ RandomForest 학습 → ⑤ 정확도·혼동행렬 출력. 각 줄의 의미를 풀어서.</div></div>`}},
+    {prompt:"이 개념(LOFO), 연구 초보한테 설명하듯 알려줘",
+     result:{type:"mockup", html:`<div class="mockCol"><div class="h">눈높이 설명</div><div class="ln">"LOFO = 한 파일을 통째로 빼고 학습한 뒤, 그 파일로만 시험 보기. '처음 보는 데이터에도 되나?'를 정직하게 확인하는 방법이에요."</div></div>`}}
+  ]},
+
+  {title:"🎤 발표·보고 자료", examples:[
+    {prompt:"이 내용으로 발표 슬라이드 구성 잡아줘",
+     result:{type:"mockup", html:`<div class="ln">제안된 흐름:<br>1. 클로드 vs 클로드 코드<br>2. 할 수 있는 일 (이 카탈로그)<br>3. 사례 딥다이브<br>4. 라이브 데모<br>5. 시작법<br>6. 로드맵 + 첫 프롬프트 공개</div>`}},
+    {prompt:"결과를 한 장 요약 HTML로 만들어줘",
+     result:{type:"mockup", html:`<div class="ln" style="text-align:center;padding:12px 4px;font-size:15px;line-height:1.75">바로 <b>지금 이 발표 자료 전체</b>가 그 예시예요. 🎯<br>로드맵·이 카탈로그·시작 프롬프트 화면 모두 Claude로.<br><span style="color:var(--muted);font-size:13px">(클로징에서 "이 발표가 시작된 첫 프롬프트"로 공개)</span></div>`}}
+  ]}
+];
+
+const bg = document.getElementById('modalBg');
+const body = document.getElementById('modalBody');
+const cards = document.querySelectorAll('.card');
+cards.forEach((card,i)=>{
+  const hint=document.createElement('div'); hint.className='clickHint'; hint.textContent='클릭 → 예시 ↗';
+  card.appendChild(hint);
+  card.addEventListener('click',()=>openModal(i));
+});
+function openModal(i){
+  const e=EX[i]; if(!e) return;
+  let html=`<h3>${e.title}</h3>`;
+  e.examples.forEach((ex,idx)=>{
+    if(idx>0) html+=`<hr class="exDiv">`;
+    html+=`<div class="exNo">예시 ${idx+1}</div>`;
+    html+=`<div class="pBubble">${ex.prompt}</div>`;
+    html+=`<div class="resLabel">↓ 결과 화면</div>`;
+    html+= (ex.result.type==='image')
+      ? `<img class="res" src="${ex.result.src}" alt=""><div class="cap">${ex.result.cap||''}</div>`
+      : ex.result.html;
+  });
+  body.innerHTML=html;
+  bg.classList.add('on');
+}
+function closeModal(){ bg.classList.remove('on'); }
+document.getElementById('closeX').addEventListener('click',closeModal);
+bg.addEventListener('click',e=>{ if(e.target===bg) closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+</script>
+</body>
+</html>
