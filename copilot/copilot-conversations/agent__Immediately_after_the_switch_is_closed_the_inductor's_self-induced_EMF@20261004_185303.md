@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":50031,"contextWindow":1000000,"inputTokens":2,"outputTokens":8,"cacheReadTokens":46313,"cacheWriteTokens":3708,"updatedAt":1791107698484}'
+usage: '{"usedTokens":53060,"contextWindow":1000000,"inputTokens":2,"outputTokens":4,"cacheReadTokens":50021,"cacheWriteTokens":3033,"updatedAt":1791108704595}'
 tags:
   - copilot-conversation
 ---
@@ -138,3 +138,26 @@ $$U_B = \frac{1}{2}Li^2$$
 
 **요약:** 인덕터는 코일로 된 소자입니다. 전류 → 자기장 → 자기선속 → (전류가 변하면) 자체유도 기전력으로 이어지는 과정 때문에 **전류의 관성** 같은 역할을 합니다. 역학의 질량 $m$ 처럼, 인덕턴스 $L$ 이 클수록 전류를 바꾸기 어렵습니다.
 [Timestamp: 2026/10/04 18:54:28]
+
+**user**: "적분가능 형태" 를 영어로?
+[Timestamp: 2026/10/04 19:11:24]
+
+**ai**: "적분가능 형태"는 영어로 보통 **integrable form**이라고 합니다.
+
+다만 문맥에 따라 더 정확한 표현이 따로 있습니다.
+
+| 문맥 | 영어 표현 | 의미 |
+| --- | --- | --- |
+| 일반적인 표현 | **integrable form** | 적분할 수 있는 꼴 |
+| 미분방정식을 변수분리한 경우 | **separable form** / **separated form** | $f(y)\,dy = g(x)\,dx$ 꼴 |
+| 바로 적분할 수 있게 정리한 경우 | **a form ready for integration** | 양변을 바로 적분할 수 있는 상태 |
+| 완전미분방정식 | **exact form** (exact differential) | $M\,dx + N\,dy = dF$ 꼴 |
+
+강의의 RL 회로 풀이라면 **separable form**이 가장 자연스럽습니다. 키르히호프 식을 정리하면
+
+$$\frac{di}{\mathcal{E}/R - i} = \frac{R}{L}\,dt$$
+
+가 되는데, 영어 교재에서는 이 단계를 "rearranging into **separable form** and integrating both sides…"처럼 씁니다.
+
+참고로 수학에서 "integrable"만 단독으로 쓰면 "적분 가능한 함수"(예: Riemann integrable)라는 뜻이 됩니다. 식을 적분할 수 있게 정리했다는 뜻을 분명히 하려면 separable form이나 a form ready for integration을 쓰는 편이 오해가 적습니다.
+[Timestamp: 2026/10/04 19:11:24]
