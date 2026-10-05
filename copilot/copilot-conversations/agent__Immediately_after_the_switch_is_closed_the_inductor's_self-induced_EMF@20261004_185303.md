@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":53060,"contextWindow":1000000,"inputTokens":2,"outputTokens":4,"cacheReadTokens":50021,"cacheWriteTokens":3033,"updatedAt":1791108704595}'
+usage: '{"usedTokens":55907,"contextWindow":1000000,"inputTokens":2,"outputTokens":3,"cacheReadTokens":0,"cacheWriteTokens":55902,"updatedAt":1791181451330}'
 tags:
   - copilot-conversation
 ---
@@ -161,3 +161,25 @@ $$\frac{di}{\mathcal{E}/R - i} = \frac{R}{L}\,dt$$
 
 참고로 수학에서 "integrable"만 단독으로 쓰면 "적분 가능한 함수"(예: Riemann integrable)라는 뜻이 됩니다. 식을 적분할 수 있게 정리했다는 뜻을 분명히 하려면 separable form이나 a form ready for integration을 쓰는 편이 오해가 적습니다.
 [Timestamp: 2026/10/04 19:11:24]
+
+**user**: "축전기에 대전된 전하" 영어로
+[Timestamp: 2026/10/05 15:23:51]
+
+**ai**: "축전기에 대전된 전하"는 영어로 보통 **the charge on the capacitor**라고 합니다.
+
+| 표현 | 쓰임 |
+| --- | --- |
+| **the charge on the capacitor** | 가장 흔한 교과서식 표현 |
+| **the charge stored on (in) the capacitor** | "저장된" 의미를 강조할 때 |
+| **the charge on the capacitor plates** | 극판 위의 전하임을 분명히 할 때 |
+| **the capacitor's charge** | 짧게 쓸 때 |
+
+예문:
+
+- "The **charge on the capacitor** is $Q = CV$."
+- "When the switch is closed, the **charge stored on the capacitor** decreases exponentially."
+
+"대전된"을 살려 **the charge accumulated on the capacitor**라고 해도 되지만, 물리 교재에서는 거의 the charge on the capacitor 하나로 통일해서 씁니다.
+
+한 가지 주의할 점이 있습니다. 축전기 전체의 알짜 전하(net charge)는 항상 0입니다. 한쪽 극판에 $+Q$, 다른 쪽 극판에 $-Q$가 있기 때문입니다. "the charge on the capacitor"는 관례적으로 **한쪽 극판에 있는 전하의 크기 $Q$** 를 뜻합니다. 이 점을 분명히 하고 싶다면 "the magnitude of the charge on each plate"라고 쓰면 됩니다.
+[Timestamp: 2026/10/05 15:23:51]
