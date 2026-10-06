@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":63857,"contextWindow":1000000,"inputTokens":2,"outputTokens":5,"cacheReadTokens":58715,"cacheWriteTokens":5135,"updatedAt":1791256996377}'
+usage: '{"usedTokens":71495,"contextWindow":1000000,"inputTokens":2,"outputTokens":6,"cacheReadTokens":67248,"cacheWriteTokens":4239,"updatedAt":1791262236033}'
 tags:
   - copilot-conversation
 ---
@@ -251,3 +251,74 @@ $$U_E = \frac{1}{2}\,q\,\Delta\phi, \qquad U_B = \frac{1}{2}\,\Phi_B\, i$$
 
 앞에서 말한 "인덕터 = 전류의 관성"과 같은 맥락입니다. LC 회로에서 에너지가 축전기와 인덕터를 오가며 진동하는 것도, 용수철–질량계에서 퍼텐셜 에너지와 운동에너지가 서로 바뀌는 것과 같은 현상입니다.
 [Timestamp: 2026/10/06 12:22:39]
+
+**user**: energy density 는 어떻게 유도하나요?
+[Timestamp: 2026/10/06 13:50:03]
+
+**ai**: 노트 98–100페이지가 바로 이 유도 과정입니다. 방법은 하나입니다.
+
+**에너지 밀도 = 저장된 전체 에너지 ÷ 장이 차 있는 부피**
+
+다만 장이 균일해야 이렇게 단순히 나눌 수 있습니다. 그래서 장이 **균일하게 한 영역에만 갇혀 있는** 두 가지 이상적인 장치를 씁니다(98페이지).
+
+- **평행판 축전기**: 판 면적 $S$, 간격 $d$ ($\sqrt{S} \gg d$)입니다. 균일한 $E$ 가 판 사이에만 있습니다.
+- **긴 솔레노이드**: 길이 $l$, 단면적 $S$ ($l \gg a$)입니다. 균일한 $B$ 가 내부에만 있습니다.
+
+## 1. 전기장 에너지 밀도 $u_E = \dfrac{1}{2}\varepsilon_0 E^2$
+
+**① 필요한 관계식**
+
+- 전기용량: $C = \dfrac{\varepsilon_0 S}{d}$
+- 균일한 전기장에서 전위차: $\Delta\phi = Ed$
+
+**② 에너지 식에 대입**
+
+$$U_E = \frac{1}{2}C(\Delta\phi)^2 = \frac{1}{2}\cdot\frac{\varepsilon_0 S}{d}\cdot(Ed)^2 = \frac{1}{2}\varepsilon_0 E^2\cdot(Sd)$$
+
+**③ 부피로 나누기**
+
+장이 차 있는 부피는 판 사이 공간 $Sd$ 입니다.
+
+$$u_E = \frac{U_E}{Sd} = \frac{1}{2}\varepsilon_0 E^2$$
+
+## 2. 자기장 에너지 밀도 $u_B = \dfrac{B^2}{2\mu_0}$
+
+**① 필요한 관계식** ($n = N/l$: 단위 길이당 감은 수)
+
+- 인덕턴스: $L = \mu_0 n^2 l S$
+- 솔레노이드 내부 자기장: $B = \mu_0 n i$ 이므로 $i = \dfrac{B}{\mu_0 n}$
+
+**② 에너지 식에 대입**
+
+$$U_B = \frac{1}{2}Li^2 = \frac{1}{2}\cdot\mu_0 n^2 lS\cdot\frac{B^2}{\mu_0^2 n^2} = \frac{B^2}{2\mu_0}\cdot(Sl)$$
+
+$n^2$ 이 약분되고 $\mu_0$ 가 하나 남습니다.
+
+**③ 부피로 나누기**
+
+장이 차 있는 부피는 솔레노이드 내부 $Sl$ 입니다.
+
+$$u_B = \frac{U_B}{Sl} = \frac{B^2}{2\mu_0}$$
+
+## 3. 유도 과정 나란히 보기
+
+| 단계 | 평행판 축전기 | 솔레노이드 |
+| --- | --- | --- |
+| 회로 에너지 | $\frac{1}{2}C(\Delta\phi)^2$ | $\frac{1}{2}Li^2$ |
+| 기하 공식 | $C = \varepsilon_0 S/d$ | $L = \mu_0 n^2 lS$ |
+| 회로량 → 장 | $\Delta\phi = Ed$ | $i = B/(\mu_0 n)$ |
+| 결과 | $\frac{1}{2}\varepsilon_0 E^2 \times (Sd)$ | $\frac{B^2}{2\mu_0}\times(Sl)$ |
+| 에너지 밀도 | $u_E = \frac{1}{2}\varepsilon_0 E^2$ | $u_B = \frac{B^2}{2\mu_0}$ |
+
+핵심은 **회로량($\Delta\phi$, $i$, $C$, $L$)을 장($E$, $B$)과 기하 크기로 바꾸면 기하 크기가 정확히 "부피"로만 남는다**는 점입니다. 그래서 남은 계수가 장치 모양과 무관한, 장 자체의 성질이 됩니다.
+
+## 4. 왜 이 결과가 일반적인가
+
+특수한 장치로 유도했지만, 결과에는 $S$, $d$, $l$, $n$ 같은 장치 정보가 전혀 남지 않습니다. 이는 에너지가 극판이나 도선이 아니라 **공간의 장 자체에 저장된다**는 뜻입니다. 따라서 장이 균일하지 않은 일반적인 경우에도 각 점에서 이 밀도를 쓰고 부피 적분하면 됩니다.
+
+$$U = \int \left(\frac{1}{2}\varepsilon_0 E^2 + \frac{B^2}{2\mu_0}\right) dV$$
+
+(더 엄밀한 일반 증명은 맥스웰 방정식에서 나오는 포인팅 정리로 합니다.)
+
+**참고로 하나 더:** 전자기파에서는 $E = cB$ 이고 $c^2 = 1/(\varepsilon_0\mu_0)$ 입니다. 이를 대입하면 $\frac{1}{2}\varepsilon_0 E^2 = \frac{B^2}{2\mu_0}$ 이 됩니다. 즉 빛 속에서는 전기장 에너지와 자기장 에너지가 정확히 반씩 나뉩니다.
+[Timestamp: 2026/10/06 13:50:03]
