@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":55907,"contextWindow":1000000,"inputTokens":2,"outputTokens":3,"cacheReadTokens":0,"cacheWriteTokens":55902,"updatedAt":1791181451330}'
+usage: '{"usedTokens":63857,"contextWindow":1000000,"inputTokens":2,"outputTokens":5,"cacheReadTokens":58715,"cacheWriteTokens":5135,"updatedAt":1791256996377}'
 tags:
   - copilot-conversation
 ---
@@ -183,3 +183,71 @@ $$\frac{di}{\mathcal{E}/R - i} = \frac{R}{L}\,dt$$
 
 한 가지 주의할 점이 있습니다. 축전기 전체의 알짜 전하(net charge)는 항상 0입니다. 한쪽 극판에 $+Q$, 다른 쪽 극판에 $-Q$가 있기 때문입니다. "the charge on the capacitor"는 관례적으로 **한쪽 극판에 있는 전하의 크기 $Q$** 를 뜻합니다. 이 점을 분명히 하고 싶다면 "the magnitude of the charge on each plate"라고 쓰면 됩니다.
 [Timestamp: 2026/10/05 15:23:51]
+
+**user**: 95 페이지에서, 왜 | $U_E = \dfrac{q^2}{2C} = \dfrac{1}{2}C(\Delta\phi)^2$ | $U_B = \dfrac{\Phi_B^2}{2L} = \dfrac{1}{2}Li^2$ |
+| ----------------------------------------------------- | ----------------------------------------------- | 이지?
+[Timestamp: 2026/10/06 12:22:39]
+
+**ai**: 95페이지의 두 식은 **"저장된 에너지 = 그 상태를 만드는 데 한 일"** 이라는 같은 논리로 유도됩니다. 축전기와 인덕터가 수학적으로 똑같은 구조이기 때문에 식 모양도 똑같습니다.
+
+## 1. 축전기: $U_E = \dfrac{q^2}{2C} = \dfrac{1}{2}C(\Delta\phi)^2$
+
+여기서 $\Delta\phi$ 는 **극판 사이의 전위차**(보통 교재의 $V$)입니다.
+
+**유도 과정**
+
+- 축전기에 이미 전하 $q'$ 가 있으면 극판 사이 전위차는 $\Delta\phi' = q'/C$ 입니다.
+- 여기에 전하 $dq'$ 를 더 옮기려면 이 전위차를 거슬러 일을 해야 합니다.
+$$dW = \Delta\phi'\,dq' = \frac{q'}{C}\,dq'$$
+- 전하를 $0$부터 $q$ 까지 채우는 동안 한 일을 모두 더하면
+$$U_E = \int_0^q \frac{q'}{C}\,dq' = \frac{q^2}{2C}$$
+
+**두 번째 형태**: $q = C\,\Delta\phi$ 를 대입하면
+
+$$U_E = \frac{(C\Delta\phi)^2}{2C} = \frac{1}{2}C(\Delta\phi)^2$$
+
+## 2. 인덕터: $U_B = \dfrac{\Phi_B^2}{2L} = \dfrac{1}{2}Li^2$
+
+**유도 과정** (96페이지 내용)
+
+- 전류가 $i'$ 일 때 전류를 늘리면 역기전력 $\mathcal{E}_L = L\,di'/dt$ 가 생깁니다.
+- 전원은 이 역기전력을 거슬러 전하를 밀어야 하므로, 인덕터에 공급되는 일률은
+$$P = \mathcal{E}_L\, i' = L\frac{di'}{dt}\,i'$$
+- 따라서 $dW = P\,dt = L\,i'\,di'$ 이고, 전류를 $0$부터 $i$ 까지 키우는 동안 한 일은
+$$U_B = \int_0^i L\,i'\,di' = \frac{1}{2}Li^2$$
+
+**두 번째 형태**: 인덕턴스의 정의 $\Phi_B = Li$ 에서 $i = \Phi_B / L$ 을 대입하면
+
+$$U_B = \frac{1}{2}L\left(\frac{\Phi_B}{L}\right)^2 = \frac{\Phi_B^2}{2L}$$
+
+여기서 $\Phi_B$ 는 코일 전체의 **쇄교 자기선속**(flux linkage, $N\Phi$)입니다. 감은 수 $N$ 이 포함된 값입니다.
+
+## 3. 두 식이 똑같이 생긴 이유: 대응 관계
+
+두 소자 모두 "**한 양이 다른 양에 비례**"하는 선형 관계를 가집니다.
+
+| 축전기 | 인덕터 |
+| --- | --- |
+| $q = C\,\Delta\phi$ | $\Phi_B = L\,i$ |
+| 전하 $q$ | 자기선속 $\Phi_B$ |
+| 전위차 $\Delta\phi$ | 전류 $i$ |
+| 전기용량 $C$ | 인덕턴스 $L$ |
+| $U_E = \dfrac{q^2}{2C} = \dfrac{1}{2}C(\Delta\phi)^2$ | $U_B = \dfrac{\Phi_B^2}{2L} = \dfrac{1}{2}Li^2$ |
+
+표에서 $q \leftrightarrow \Phi_B$, $\Delta\phi \leftrightarrow i$, $C \leftrightarrow L$ 로 바꾸면 한쪽 식이 다른 쪽 식으로 그대로 바뀝니다.
+
+**그래프로 보면**: $\Delta\phi$–$q$ 그래프와 $i$–$\Phi_B$ 그래프는 둘 다 원점을 지나는 직선입니다. 에너지는 그 아래 **삼각형의 넓이**(밑변 × 높이 × ½)이므로 두 경우 모두 $\frac{1}{2}$ 이 붙습니다.
+
+$$U_E = \frac{1}{2}\,q\,\Delta\phi, \qquad U_B = \frac{1}{2}\,\Phi_B\, i$$
+
+이 "½ × 두 양의 곱" 형태에 비례 관계를 대입해서 한 변수를 없애면 표의 두 가지 형태가 나옵니다.
+
+## 4. 역학과의 비유
+
+용수철 에너지 $\frac{1}{2}kx^2$ 과 운동에너지 $\frac{1}{2}mv^2$ 에 대응시켜 보면 이해가 더 쉽습니다.
+
+- 축전기의 $\dfrac{q^2}{2C}$ 는 **용수철 퍼텐셜 에너지** $\dfrac{1}{2}kx^2$ 에 대응합니다. ($q \leftrightarrow x$, $1/C \leftrightarrow k$)
+- 인덕터의 $\dfrac{1}{2}Li^2$ 은 **운동에너지** $\dfrac{1}{2}mv^2$ 에 대응합니다. ($i \leftrightarrow v$, $L \leftrightarrow m$)
+
+앞에서 말한 "인덕터 = 전류의 관성"과 같은 맥락입니다. LC 회로에서 에너지가 축전기와 인덕터를 오가며 진동하는 것도, 용수철–질량계에서 퍼텐셜 에너지와 운동에너지가 서로 바뀌는 것과 같은 현상입니다.
+[Timestamp: 2026/10/06 12:22:39]
