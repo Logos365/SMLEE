@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":71495,"contextWindow":1000000,"inputTokens":2,"outputTokens":6,"cacheReadTokens":67248,"cacheWriteTokens":4239,"updatedAt":1791262236033}'
+usage: '{"usedTokens":76421,"contextWindow":1000000,"inputTokens":2,"outputTokens":6,"cacheReadTokens":0,"cacheWriteTokens":76413,"updatedAt":1791275299332}'
 tags:
   - copilot-conversation
 ---
@@ -322,3 +322,42 @@ $$U = \int \left(\frac{1}{2}\varepsilon_0 E^2 + \frac{B^2}{2\mu_0}\right) dV$$
 
 **참고로 하나 더:** 전자기파에서는 $E = cB$ 이고 $c^2 = 1/(\varepsilon_0\mu_0)$ 입니다. 이를 대입하면 $\frac{1}{2}\varepsilon_0 E^2 = \frac{B^2}{2\mu_0}$ 이 됩니다. 즉 빛 속에서는 전기장 에너지와 자기장 에너지가 정확히 반씩 나뉩니다.
 [Timestamp: 2026/10/06 13:50:03]
+
+**user**: 아래 내용을 각각 영어로번역해줘.
+[Timestamp: 2026/10/06 17:27:38]
+
+**ai**: 슬라이드의 왼쪽(축전기)과 오른쪽(인덕터) 문장을 각각 번역했습니다.
+
+## 왼쪽: 축전기 (Capacitor)
+
+**전기용량이 $C$인 축전기를 기전력이 $\mathcal{E}$인 전지로 충전**
+- Charging a capacitor of capacitance $C$ with a battery of EMF $\mathcal{E}$
+
+**축전기의 전하가 $q'$일 때, 축전기 양단의 전위차**
+- When the charge on the capacitor is $q'$, the potential difference across the capacitor is
+$$\Delta\phi = \frac{q'}{C}$$
+
+**전위차가 $\Delta\phi$인 축전기에 전하 $dq'$을 더하는 데 전지가 축전기에 하는 일**
+- The work done by the battery on the capacitor to add charge $dq'$ to the capacitor at potential difference $\Delta\phi$ is
+$$dW = \Delta\phi\,dq' = \frac{q'}{C}\,dq'$$
+
+## 오른쪽: 인덕터 (Inductor)
+
+**인덕턴스가 $L$인 인덕터를 기전력이 $\mathcal{E}$인 전지에 연결**
+- Connecting an inductor of inductance $L$ to a battery of EMF $\mathcal{E}$
+
+**인덕터에 흐르는 전류가 $i'$일 때, 인덕터 양단의 전위차**
+- When the current through the inductor is $i'$, the potential difference across the inductor is
+$$\Delta\phi = L\frac{di'}{dt}$$
+
+**전위차가 $\Delta\phi$인 인덕터에 전하 $dq'$을 더 이동시키는 데 전지가 인덕터에 하는 일**
+- The work done by the battery on the inductor to move an additional charge $dq'$ through the inductor at potential difference $\Delta\phi$ is
+$$dW = \Delta\phi\,dq' = L\frac{di'}{dt}\,dq' = L\,di'\,\frac{dq'}{dt} = L\,i'\,di'$$
+
+## 번역 메모
+
+- "충전"은 **charging**입니다. "전지에 연결"은 **connecting ... to a battery**입니다.
+- "양단의 전위차"는 **the potential difference across**입니다. 영어 교재에서는 흔히 *the voltage across*라고도 씁니다.
+- 축전기에서는 전하가 극판에 **쌓이므로** "add charge to"를 썼습니다. 인덕터에서는 전하가 코일을 **통과하므로** "move charge through"를 썼습니다. 원문의 "더하는"과 "더 이동시키는"의 차이를 살린 것입니다.
+- 마지막 단계 $L\,di'\,\dfrac{dq'}{dt} = L\,i'\,di'$ 는 $\dfrac{dq'}{dt} = i'$ (전류의 정의)를 쓴 것입니다. 설명을 덧붙인다면 "using $dq'/dt = i'$"라고 쓰면 됩니다.
+[Timestamp: 2026/10/06 17:27:38]
