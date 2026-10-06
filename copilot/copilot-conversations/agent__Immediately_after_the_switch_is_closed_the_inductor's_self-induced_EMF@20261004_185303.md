@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":76421,"contextWindow":1000000,"inputTokens":2,"outputTokens":6,"cacheReadTokens":0,"cacheWriteTokens":76413,"updatedAt":1791275299332}'
+usage: '{"usedTokens":87217,"contextWindow":1000000,"inputTokens":2,"outputTokens":10,"cacheReadTokens":83878,"cacheWriteTokens":3327,"updatedAt":1791276122051}'
 tags:
   - copilot-conversation
 ---
@@ -361,3 +361,58 @@ $$dW = \Delta\phi\,dq' = L\frac{di'}{dt}\,dq' = L\,di'\,\frac{dq'}{dt} = L\,i'\,
 - 축전기에서는 전하가 극판에 **쌓이므로** "add charge to"를 썼습니다. 인덕터에서는 전하가 코일을 **통과하므로** "move charge through"를 썼습니다. 원문의 "더하는"과 "더 이동시키는"의 차이를 살린 것입니다.
 - 마지막 단계 $L\,di'\,\dfrac{dq'}{dt} = L\,i'\,di'$ 는 $\dfrac{dq'}{dt} = i'$ (전류의 정의)를 쓴 것입니다. 설명을 덧붙인다면 "using $dq'/dt = i'$"라고 쓰면 됩니다.
 [Timestamp: 2026/10/06 17:27:38]
+
+**user**: page 96의 내용을 위에서 번역한 내용으로 바꾸어 주세요.
+[Timestamp: 2026/10/06 17:40:35]
+
+**ai**: [[차동우 일반물리2 19_전자기유도_EN]]의 Page 96 본문을 앞에서 번역한 슬라이드 내용으로 바꿨습니다.
+
+새 본문은 슬라이드처럼 두 부분입니다.
+
+- **Capacitor**: 충전 상황, $\Delta\phi = q'/C$, $dW = \dfrac{q'}{C}\,dq'$
+- **Inductor**: 전지에 연결한 상황, $\Delta\phi = L\,di'/dt$, $dW = L\,i'\,di'$
+
+바뀐 점 두 가지를 알려 드립니다.
+
+- **삭제된 내용**: 원래 있던 일률 식 $P = L\dfrac{di}{dt}\cdot i$ 와 적분 결과 $W = \int_0^i L\,i'\,di' = \frac{1}{2}Li^2$ 은 지웠습니다. 다만 적분 결과는 Page 97에 $U_B = \frac{1}{2}Li^2$ 로 그대로 남아 있습니다.
+- **제목은 그대로 두었습니다**: 섹션 제목이 아직 "Magnetic Energy Stored in Inductor (Derivation Setup)"입니다. 이제 축전기 내용도 들어 있으므로 "Work Done by the Battery: Capacitor vs. Inductor" 같은 제목이 더 맞을 수 있습니다. 원하시면 바꿔 드리겠습니다.
+[Timestamp: 2026/10/06 17:40:35]
+
+**user**: 위 내용도 영어로 각각 번역해 주세요. page 97의 내용입니다.
+[Timestamp: 2026/10/06 17:41:41]
+
+**ai**: Page 97 슬라이드의 왼쪽(축전기)과 오른쪽(인덕터)을 각각 번역했습니다.
+
+## 왼쪽: 축전기 (Capacitor)
+
+$$dW = \frac{q'}{C}\,dq'$$
+
+**축전기에 대전된 전하가 0에서 시작해서 $q$가 될 때까지 전지가 축전기에 해준 전체 일**
+- The total work done by the battery on the capacitor as the charge on the capacitor increases from 0 to $q$
+$$W = \int_0^q \frac{q'}{C}\,dq' = \frac{q^2}{2C}$$
+
+**전지가 축전기를 충전하며 한 일이 축전기에 전기에너지로 저장됨**
+- The work done by the battery in charging the capacitor is stored in the capacitor as electric energy.
+$$U_E = \frac{q^2}{2C} = \frac{1}{2}C(\Delta\phi)^2 \qquad (q = C\Delta\phi)$$
+
+## 오른쪽: 인덕터 (Inductor)
+
+$$dW = L\,i'\,di'$$
+
+**인덕터에 흐르는 전류가 0에서 시작해서 $i$가 될 때까지 전지가 인덕터에 해준 전체 일**
+- The total work done by the battery on the inductor as the current through the inductor increases from 0 to $i$
+$$W = \int_0^i L\,i'\,di' = \frac{1}{2}Li^2$$
+
+**전지가 인덕터에 전류를 흐르게 하며 한 일이 인덕터에 자기에너지로 저장됨**
+- The work done by the battery in driving current through the inductor is stored in the inductor as magnetic energy.
+$$U_B = \frac{1}{2}Li^2 = \frac{\Phi_B^2}{2L} \qquad (\Phi_B = Li)$$
+
+## 번역 메모
+
+- 슬라이드 맨 위 왼쪽 식은 이미지에서 분자 $q'$ 가 빠져 "$dW = {}_C\,dq'$"처럼 보입니다. 적분 기호도 깨져 보입니다. 렌더링 오류로 보여서 Page 96과 같은 $dW = \dfrac{q'}{C}\,dq'$ 로 복원했습니다.
+- "0에서 시작해서 ~가 될 때까지"는 **increases from 0 to ~** 로 간결하게 옮겼습니다.
+- "전류를 흐르게 하며"는 **driving current through** 입니다. 회로에서 전원이 전류를 흘려보낸다는 뜻으로 영어 교재에서 많이 쓰는 표현입니다.
+- "전기에너지/자기에너지로 저장됨"은 **is stored ... as electric / magnetic energy** 입니다.
+
+Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시면 말씀해 주세요.
+[Timestamp: 2026/10/06 17:41:41]
