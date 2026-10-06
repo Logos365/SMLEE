@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":87217,"contextWindow":1000000,"inputTokens":2,"outputTokens":10,"cacheReadTokens":83878,"cacheWriteTokens":3327,"updatedAt":1791276122051}'
+usage: '{"usedTokens":94295,"contextWindow":1000000,"inputTokens":2,"outputTokens":647,"cacheReadTokens":91744,"cacheWriteTokens":1902,"updatedAt":1791276988327}'
 tags:
   - copilot-conversation
 ---
@@ -416,3 +416,21 @@ $$U_B = \frac{1}{2}Li^2 = \frac{\Phi_B^2}{2L} \qquad (\Phi_B = Li)$$
 
 Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시면 말씀해 주세요.
 [Timestamp: 2026/10/06 17:41:41]
+
+**user**: 위 번역을 바탕으로, 97페이지를 업데이트 해주세요.
+[Timestamp: 2026/10/06 17:56:02]
+
+**ai**: [[차동우 일반물리2 19_전자기유도_EN]]의 Page 97 본문을 번역 내용으로 바꿨습니다. 형식은 Page 96과 같습니다.
+
+- **Capacitor**: $dW = \dfrac{q'}{C}\,dq'$ 를 $0$에서 $q$까지 적분해 $W = \dfrac{q^2}{2C}$ 를 구합니다. 전지가 한 일이 전기에너지로 저장되므로 $U_E = \dfrac{q^2}{2C} = \dfrac{1}{2}C(\Delta\phi)^2$ 입니다(using $q = C\Delta\phi$).
+- **Inductor**: $dW = L\,i'\,di'$ 를 $0$에서 $i$까지 적분해 $W = \frac{1}{2}Li^2$ 을 구합니다. 전지가 한 일이 자기에너지로 저장되므로 $U_B = \frac{1}{2}Li^2 = \dfrac{\Phi_B^2}{2L}$ 입니다(using $\Phi_B = Li$).
+
+원래 노트에서 $U_B$ 결과에 쳐져 있던 박스는 유지했고, 짝을 맞추려고 $U_E$ 결과에도 박스를 쳤습니다.
+
+**제목은 그대로입니다**: 섹션 제목이 아직 "Magnetic Energy (Result)"인데, 이제 전기에너지 내용도 들어 있습니다. Page 96 제목과 함께 바꿀 만합니다. 예를 들면 다음과 같습니다.
+
+- Page 96: "Work Done by the Battery: Capacitor vs. Inductor"
+- Page 97: "Electric Energy and Magnetic Energy (Result)"
+
+원하시면 두 제목을 함께 바꿔 드리겠습니다.
+[Timestamp: 2026/10/06 17:56:02]
