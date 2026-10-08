@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":94295,"contextWindow":1000000,"inputTokens":2,"outputTokens":647,"cacheReadTokens":91744,"cacheWriteTokens":1902,"updatedAt":1791276988327}'
+usage: '{"usedTokens":101897,"contextWindow":1000000,"inputTokens":2,"outputTokens":692,"cacheReadTokens":100622,"cacheWriteTokens":581,"updatedAt":1791434332403}'
 tags:
   - copilot-conversation
 ---
@@ -434,3 +434,23 @@ Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시�
 
 원하시면 두 제목을 함께 바꿔 드리겠습니다.
 [Timestamp: 2026/10/06 17:56:02]
+
+**user**: 슬라이드 98인데요. 한글로 된 내용을 영어로 모두 바꾸어서, Page 98페이지를 업데이트 해주세요.
+[Timestamp: 2026/10/08 13:37:24]
+
+**ai**: [[차동우 일반물리2 19_전자기유도_EN]]의 Page 98 본문을 슬라이드 번역으로 바꿨습니다. 원래 있던 요약 비교표 대신, Page 96·97과 같은 형식(왼쪽 → 오른쪽)으로 정리했습니다.
+
+**Parallel-Plate Capacitor** (평행판 축전기)
+- 도체판의 넓이가 $S$이고 두 도체판 사이의 거리가 $d$인 평행판 축전기 → *A parallel-plate capacitor with conducting plates of area $S$ separated by a distance $d$*
+- 조건 $\sqrt{S} \gg d$ 를 수식 그대로 넣었습니다.
+- 전기장은 두 도체판 사이에만 존재한다 → *The electric field exists only between the two conducting plates.*
+- 두 도체판 사이에는 균일한 전기장이 생긴다 → *A uniform electric field is produced between the two conducting plates.*
+
+**Solenoid** (솔레노이드)
+- 길이가 $l$이고 단면의 반지름이 $a$인 솔레노이드 → *A solenoid of length $l$ with cross-sectional radius $a$*
+- 조건 $l \gg a$ 를 수식 그대로 넣었습니다.
+- 자기장은 솔레노이드 내부에만 존재한다 → *The magnetic field exists only inside the solenoid.*
+- 솔레노이드 내부에는 균일한 자기장이 생긴다 → *A uniform magnetic field is produced inside the solenoid.*
+
+섹션 제목 "Parallel-Plate Capacitor vs. Solenoid"는 슬라이드 내용과 맞아서 그대로 두었습니다. 슬라이드의 전기장선·자기장선 그림은 노트에 넣지 않았습니다. 그림 파일이 vault에 있으면 `![[파일명]]` 형식으로 넣어 드릴 수 있습니다.
+[Timestamp: 2026/10/08 13:37:24]
