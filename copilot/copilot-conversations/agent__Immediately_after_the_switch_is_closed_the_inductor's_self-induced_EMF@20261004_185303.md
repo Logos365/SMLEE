@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":101897,"contextWindow":1000000,"inputTokens":2,"outputTokens":692,"cacheReadTokens":100622,"cacheWriteTokens":581,"updatedAt":1791434332403}'
+usage: '{"usedTokens":102915,"contextWindow":1000000,"inputTokens":2,"outputTokens":8,"cacheReadTokens":14788,"cacheWriteTokens":88117,"updatedAt":1791443516257}'
 tags:
   - copilot-conversation
 ---
@@ -454,3 +454,26 @@ Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시�
 
 섹션 제목 "Parallel-Plate Capacitor vs. Solenoid"는 슬라이드 내용과 맞아서 그대로 두었습니다. 슬라이드의 전기장선·자기장선 그림은 노트에 넣지 않았습니다. 그림 파일이 vault에 있으면 `![[파일명]]` 형식으로 넣어 드릴 수 있습니다.
 [Timestamp: 2026/10/08 13:37:24]
+
+**user**: "전위차" 를 영어로?
+[Timestamp: 2026/10/08 16:11:18]
+
+**ai**: "전위차"는 영어로 **potential difference**입니다.
+
+| 표현 | 쓰임 |
+| --- | --- |
+| **potential difference** | 가장 정확한 물리 용어 |
+| **electric potential difference** | "전기" 퍼텐셜임을 분명히 할 때 |
+| **voltage** | 일상적이고 회로 중심의 표현으로 가장 흔함 |
+
+예문:
+
+- "the potential difference **across** the capacitor" (축전기 양단의 전위차)
+- "the potential difference **between** the two plates" (두 극판 사이의 전위차)
+
+**전치사**: 소자 양 끝의 전위차는 **across**를 씁니다. 두 지점 사이의 전위차는 **between A and B**를 씁니다.
+
+**기호**: 영어 교재에서는 보통 $\Delta V$ 또는 $V$를 씁니다. 차동우 교수 강의의 $\Delta\phi$는 전위를 $\phi$로 나타내는 표기라서, 의미는 $\Delta V$와 같습니다.
+
+**전위와 구분**: "전위"는 **electric potential**입니다. "전위차"는 두 점 사이의 전위의 **차이**이므로 potential **difference**입니다.
+[Timestamp: 2026/10/08 16:11:18]
