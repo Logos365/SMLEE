@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":107357,"contextWindow":1000000,"inputTokens":2,"outputTokens":8,"cacheReadTokens":105338,"cacheWriteTokens":2009,"updatedAt":1791446203720}'
+usage: '{"usedTokens":108981,"contextWindow":1000000,"inputTokens":2,"outputTokens":8,"cacheReadTokens":0,"cacheWriteTokens":108971,"updatedAt":1791613684397}'
 tags:
   - copilot-conversation
 ---
@@ -517,3 +517,23 @@ Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시�
 - 식과 함께 쓰면 "The electric energy density at a point where the electric field is $E$ is $u_E = \frac{1}{2}\varepsilon_0 E^2$."가 됩니다.
 - 짝이 되는 자기 쪽은 **Magnetic energy density at a point where the magnetic field is $B$** 이고, 식은 $u_B = \dfrac{B^2}{2\mu_0}$ 입니다.
 [Timestamp: 2026/10/08 16:56:20]
+
+**user**: "탄성력을 받는 물체의 운동" 영어로?
+[Timestamp: 2026/10/10 15:27:39]
+
+**ai**: "탄성력을 받는 물체의 운동"은 영어로 다음과 같습니다.
+
+**Motion of an object subject to an elastic force**
+
+| 표현 | 쓰임 |
+| --- | --- |
+| **Motion of an object subject to an elastic force** | 원문에 가장 가까운 표현 |
+| **Motion of an object under an elastic (restoring) force** | "~을 받는"을 *under*로 옮긴 표현 |
+| **Motion of a mass on a spring** | 영어 교재에서 가장 흔한 구체적 표현 |
+| **Simple harmonic motion (SHM)** | 그 운동의 이름(단순조화운동) |
+
+**참고**
+- "~을 받는"은 **subject to** 또는 **under**로 옮깁니다. 둘 다 자연스럽습니다.
+- 물리 교재에서 "탄성력"은 보통 **spring force**나 **restoring force**(복원력)라고도 합니다. 식은 훅의 법칙(Hooke's law) $F = -kx$ 입니다.
+- 이 내용이 다음 섹션 **19J LC Oscillation**의 비교 슬라이드라면, 짝이 되는 표현은 **Charge oscillation in an LC circuit** (LC 회로에서 전하의 진동)입니다. 앞에서 정리한 대응($q \leftrightarrow x$, $L \leftrightarrow m$, $1/C \leftrightarrow k$)이 바로 이 비교의 핵심입니다.
+[Timestamp: 2026/10/10 15:27:39]
