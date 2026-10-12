@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":121299,"contextWindow":1000000,"inputTokens":2,"outputTokens":979,"cacheReadTokens":119125,"cacheWriteTokens":1193,"updatedAt":1791774760094}'
+usage: '{"usedTokens":133742,"contextWindow":1000000,"inputTokens":2,"outputTokens":803,"cacheReadTokens":132558,"cacheWriteTokens":379,"updatedAt":1791778214254}'
 tags:
   - copilot-conversation
 ---
@@ -559,3 +559,30 @@ Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시�
 
 **덮어쓴 내용 확인이 필요합니다.** 원래 Page 4에는 회전하는 고리의 자기선속 $\Phi_B(t) = \vec{B}\cdot\vec{S} = BS\cos\theta(t)$ 가 있었는데, 요청대로 이번에 교체했습니다. 그런데 Page 5가 이 식을 그대로 이어서 $\theta(t) = \omega t$ 를 대입하고 있습니다. 그래서 그 내용은 원래 다른 슬라이드(예: Page 5 바로 앞 슬라이드)에 있던 것일 수 있습니다. 노트의 페이지 번호가 실제 슬라이드와 한 칸씩 어긋나 있을 가능성도 있습니다. 다시 넣어야 하면 말씀해 주세요. 옛 내용은 git 기록에도 남아 있습니다.
 [Timestamp: 2026/10/12 12:11:37]
+
+**user**: 위 페이지를 영어로 번역해주시고, Page 5로 만들어 주세요. 
+기존 page 5-100은, page 6-101로 업데이트 해주세요.
+[Timestamp: 2026/10/12 13:06:35]
+
+**ai**: [[차동우 일반물리2 20_교류와 교류회로_EN]]에서 두 가지 작업을 마쳤습니다.
+
+**1. 새 Page 5 추가**: 제목은 "Magnetic Flux Through the Closed Loop"입니다.
+
+| 원문 | 영어 |
+| --- | --- |
+| 폐회로를 지나가는 자기장 선속 (제목) | Magnetic Flux Through the Closed Loop |
+| 균일한 자기장 $\vec{B}$에 놓인 단면의 면벡터가 $\vec{S}$인 폐회로를 지나가는 자기장 선속 $\Phi_B$ | Magnetic flux $\Phi_B$ through a closed loop whose cross-sectional area vector is $\vec{S}$, placed in a uniform magnetic field $\vec{B}$ |
+| 식 | $\Phi_B(t) = \vec{B}\cdot\vec{S} = BS\cos\theta(t)$ |
+
+자석 사이에서 고리가 각속도 $\omega$로 회전하는 그림은 설명 문구로 넣었습니다. 슬라이드 이미지에서 $\vec{S}$ 기호가 깨져 보였는데, 식의 문맥에 맞춰 $\vec{S}$로 옮겼습니다.
+
+**2. 기존 페이지 번호 하나씩 밀기**: 기존 Page 5–100의 제목을 Page 6–101로 바꿨습니다. 괄호 안 슬라이드 번호도 Slide 6–101로 함께 바꿨습니다. 결과는 다음과 같습니다.
+
+- Page 4: Faraday's Law
+- Page 5: Magnetic Flux Through the Closed Loop (새로 추가)
+- Page 6: Induced EMF of the AC Generator (기존 Page 5)
+- …
+- Page 101: End of Lecture 20 (기존 Page 100)
+
+이제 흐름이 패러데이 법칙 → 회전하는 고리의 자기선속 $BS\cos\theta(t)$ → $\theta = \omega t$를 대입한 유도 기전력으로 자연스럽게 이어집니다. 본문 안에서 다른 페이지 번호를 가리키는 곳은 없어서 제목만 바꾸면 됐습니다.
+[Timestamp: 2026/10/12 13:06:35]
