@@ -4,7 +4,7 @@ mode: agent
 backendId: claude
 sessionId: "bc0f7f33-69ba-44aa-8bb4-2cac66ec7c59"
 agentLabel: "Immediately after the switch is closed: the inductor's self-…"
-usage: '{"usedTokens":108981,"contextWindow":1000000,"inputTokens":2,"outputTokens":8,"cacheReadTokens":0,"cacheWriteTokens":108971,"updatedAt":1791613684397}'
+usage: '{"usedTokens":121299,"contextWindow":1000000,"inputTokens":2,"outputTokens":979,"cacheReadTokens":119125,"cacheWriteTokens":1193,"updatedAt":1791774760094}'
 tags:
   - copilot-conversation
 ---
@@ -537,3 +537,25 @@ Page 96처럼 이 번역으로 노트의 Page 97 본문을 바꾸길 원하시�
 - 물리 교재에서 "탄성력"은 보통 **spring force**나 **restoring force**(복원력)라고도 합니다. 식은 훅의 법칙(Hooke's law) $F = -kx$ 입니다.
 - 이 내용이 다음 섹션 **19J LC Oscillation**의 비교 슬라이드라면, 짝이 되는 표현은 **Charge oscillation in an LC circuit** (LC 회로에서 전하의 진동)입니다. 앞에서 정리한 대응($q \leftrightarrow x$, $L \leftrightarrow m$, $1/C \leftrightarrow k$)이 바로 이 비교의 핵심입니다.
 [Timestamp: 2026/10/10 15:27:39]
+
+**user**: 위 내용을 영어로 번역해서, 차동우 일반물리2 20_교류와 교류회로_EN에 page 4에 넣어주세요. page4를 업데이트 해주세요.
+[Timestamp: 2026/10/12 12:11:37]
+
+**ai**: [[차동우 일반물리2 20_교류와 교류회로_EN]]의 Page 4를 슬라이드 번역으로 바꿨습니다. 형식은 앞 페이지들과 같게 맞췄습니다.
+
+**번역 대응**
+
+| 원문 | 영어 |
+| --- | --- |
+| 패러데이 법칙 (제목) | Faraday's Law |
+| 폐회로를 통과하는 자기장 선속 $\Phi_B(t)$ | Magnetic flux $\Phi_B(t)$ through the closed loop |
+| 폐회로에 유도되는 기전력 $\mathcal{E}$ | Induced EMF $\mathcal{E}$ in the closed loop |
+| 폐회로를 통과하는 자기장 선속 $\Phi_B$가 바뀔 수 있는 방법 | Ways in which the magnetic flux $\Phi_B$ through the closed loop can change |
+| ① 자기장 $\vec{B}$의 세기가 바뀜 | The magnitude of the magnetic field $\vec{B}$ through the closed loop changes. |
+| ② 폐회로의 형태가 바뀜 | The shape of the closed loop changes. |
+| ③ 폐회로 면의 방향과 자기장 방향 사이의 사이각이 바뀜 | The angle between the direction of the loop's surface (area vector) and the direction of the magnetic field changes. |
+
+식 $\Phi_B(t) = \int_S \vec{B}(t)\cdot d\vec{S}$, $\mathcal{E} = \oint_C \vec{E}\cdot d\vec{r}$, $\mathcal{E} = -\dfrac{d\Phi_B}{dt}$ 를 넣었고, 슬라이드에서 강조된 패러데이 법칙 식에는 박스를 쳤습니다. 막대자석 그림은 설명 문구로 넣었습니다.
+
+**덮어쓴 내용 확인이 필요합니다.** 원래 Page 4에는 회전하는 고리의 자기선속 $\Phi_B(t) = \vec{B}\cdot\vec{S} = BS\cos\theta(t)$ 가 있었는데, 요청대로 이번에 교체했습니다. 그런데 Page 5가 이 식을 그대로 이어서 $\theta(t) = \omega t$ 를 대입하고 있습니다. 그래서 그 내용은 원래 다른 슬라이드(예: Page 5 바로 앞 슬라이드)에 있던 것일 수 있습니다. 노트의 페이지 번호가 실제 슬라이드와 한 칸씩 어긋나 있을 가능성도 있습니다. 다시 넣어야 하면 말씀해 주세요. 옛 내용은 git 기록에도 남아 있습니다.
+[Timestamp: 2026/10/12 12:11:37]
