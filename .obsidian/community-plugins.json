@@ -13,7 +13,6 @@
   "obsidian-zotero-desktop-connector",
   "templater-obsidian",
   "obsidian-trash-explorer",
-  "copilot",
   "terminal",
   "obsidian-advanced-slides",
   "kr-book-info-plugin",
@@ -22,5 +21,6 @@
   "obsidian-custom-frames",
   "obsidian-google-lookup",
   "docxer",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-html-plugin"
 ]
